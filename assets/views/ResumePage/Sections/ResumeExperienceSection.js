@@ -9,6 +9,8 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import SectionHeader from "components/SectionHeader";
+import logoAexp from "images/logo-aexp.png";
+import logoER2 from "images/logo-er2.webp";
 import logoNextiva from "images/logo-nextiva.png";
 import logoGeneralDynamics from "images/logo-generaldynamics.png";
 import logoLockheedMartin from "images/logo-lockheedmartin.png";
@@ -22,6 +24,131 @@ const ResumeExperienceSection = () => {
     <Grid item md={8} xs={12}>
       <SectionHeader variant="h4" text="Work Experience" />
       <Grid container direction="column" justify="flex-start" spacing={4}>
+        <Grid item>
+          <div style={{ width: "35%", minWidth: "310px", height: "auto" }}>
+            <Image
+              src={logoAexp}
+              aria-label="American Express"
+              imageStyle={{ width: "35%", minWidth: "310px", height: "auto" }}
+              style={{ paddingTop: "117px" }}
+              />
+          </div>
+          <Typography variant="h6">American Express | Senior Software Engineer I</Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            Scottsdale, AZ | May 2021 - Present
+          </Typography>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aira-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography variant="subtitle2">
+                Roles and Responsibilities:
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ul>
+                <li>
+                  <Typography variant="body1">
+                    Migrate existing repositories from Bitbucket to GitHub.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Bugfixes for managing user sessions and handling timeouts.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Diagnose compatibility issues of modules in Internet Explorer 11.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Upgrade login functionality to improved API for tighter user profile and user session integration.
+                  </Typography>
+                </li>
+              </ul>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aira-controls="panel1b-content"
+              id="panel1b-header"
+            >
+              <Typography variant="subtitle2">
+                Technologies Utilized:
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="body1">
+                AWS ECS, PHP, Symfony, HTML, CSS, JavaScript
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+        <Grid item>
+          <div style={{ width: "35%", minWidth: "310px", height: "auto" }}>
+            <Image
+              src={logoER2}
+              aria-label="ER2"
+              imageStyle={{ width: "35%", minWidth: "310px", height: "auto" }}
+              style={{ paddingTop: "104px", backgroundColor: "#363636" }}
+              />
+          </div>
+          <Typography variant="h6">ER2 | Web Developer</Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            Mesa, AZ | March 2021 - April 2021
+          </Typography>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aira-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography variant="subtitle2">
+                Roles and Responsibilities:
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ul>
+                <li>
+                  <Typography variant="body1">
+                    Created Cron based scheduling for company slideshow displayed throughout facilities.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Add ability to log multiple door seals for chain of custody.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Bugfixes for table sorting and UX consistency.
+                  </Typography>
+                </li>
+              </ul>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aira-controls="panel1b-content"
+              id="panel1b-header"
+            >
+              <Typography variant="subtitle2">
+                Technologies Utilized:
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="body1">
+                JavaScript, React.js, Redux.js, Hooks, React Helmet, Jenkins, One App.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
         <Grid item>
           <Image
             src={logoNextiva}
