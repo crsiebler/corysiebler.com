@@ -1,39 +1,41 @@
-import React from "react";
-import Image from "material-ui-image";
-import { useTheme } from "@material-ui/core/styles";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import Accordion from "@material-ui/core/Accordion";
-import AccordionSummary from "@material-ui/core/AccordionSummary";
-import AccordionDetails from "@material-ui/core/AccordionDetails";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import SectionHeader from "components/SectionHeader";
-import logoAexp from "images/logo-aexp.png";
-import logoER2 from "images/logo-er2.webp";
-import logoNextiva from "images/logo-nextiva.png";
-import logoGeneralDynamics from "images/logo-generaldynamics.png";
-import logoLockheedMartin from "images/logo-lockheedmartin.png";
-import logoGhostArmor from "images/logo-ghostarmor.png";
+import React from 'react';
+import Image from 'material-ui-image';
+import { useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import SectionHeader from 'components/SectionHeader';
+import logoAexp from 'images/logo-aexp.png';
+import logoER2 from 'images/logo-er2.webp';
+import logoNextiva from 'images/logo-nextiva.png';
+import logoGeneralDynamics from 'images/logo-generaldynamics.png';
+import logoLockheedMartin from 'images/logo-lockheedmartin.png';
+import logoGhostArmor from 'images/logo-ghostarmor.png';
 
 const ResumeExperienceSection = () => {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
+  const matches = useMediaQuery(theme.breakpoints.up('md'));
 
   return (
     <Grid item md={8} xs={12}>
       <SectionHeader variant="h4" text="Work Experience" />
       <Grid container direction="column" justify="flex-start" spacing={4}>
         <Grid item>
-          <div style={{ width: "35%", minWidth: "310px", height: "auto" }}>
+          <div style={{ width: '35%', minWidth: '310px', height: 'auto' }}>
             <Image
               src={logoAexp}
               aria-label="American Express"
-              imageStyle={{ width: "35%", minWidth: "310px", height: "auto" }}
-              style={{ paddingTop: "117px" }}
-              />
+              imageStyle={{ width: '35%', minWidth: '310px', height: 'auto' }}
+              style={{ paddingTop: '117px' }}
+            />
           </div>
-          <Typography variant="h6">American Express | Senior Software Engineer I</Typography>
+          <Typography variant="h6">
+            American Express | Senior Software Engineer I
+          </Typography>
           <Typography variant="subtitle1" gutterBottom>
             Scottsdale, AZ | May 2021 - Present
           </Typography>
@@ -61,12 +63,14 @@ const ResumeExperienceSection = () => {
                 </li>
                 <li>
                   <Typography variant="body1">
-                    Diagnose compatibility issues of modules in Internet Explorer 11.
+                    Diagnose compatibility issues of modules in Internet
+                    Explorer 11.
                   </Typography>
                 </li>
                 <li>
                   <Typography variant="body1">
-                    Upgrade login functionality to improved API for tighter user profile and user session integration.
+                    Upgrade login functionality to improved API for tighter user
+                    profile and user session integration.
                   </Typography>
                 </li>
               </ul>
@@ -84,19 +88,19 @@ const ResumeExperienceSection = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="body1">
-                AWS ECS, PHP, Symfony, HTML, CSS, JavaScript
+                React.js, Redux.js, Jenkins, Docker, Parrot QA, One-App
               </Typography>
             </AccordionDetails>
           </Accordion>
         </Grid>
         <Grid item>
-          <div style={{ width: "35%", minWidth: "310px", height: "auto" }}>
+          <div style={{ width: '35%', minWidth: '310px', height: 'auto' }}>
             <Image
               src={logoER2}
               aria-label="ER2"
-              imageStyle={{ width: "35%", minWidth: "310px", height: "auto" }}
-              style={{ paddingTop: "104px", backgroundColor: "#363636" }}
-              />
+              imageStyle={{ width: '35%', minWidth: '310px', height: 'auto' }}
+              style={{ paddingTop: '104px', backgroundColor: '#363636' }}
+            />
           </div>
           <Typography variant="h6">ER2 | Web Developer</Typography>
           <Typography variant="subtitle1" gutterBottom>
@@ -116,7 +120,8 @@ const ResumeExperienceSection = () => {
               <ul>
                 <li>
                   <Typography variant="body1">
-                    Created Cron based scheduling for company slideshow displayed throughout facilities.
+                    Created Cron based scheduling for company slideshow
+                    displayed throughout facilities.
                   </Typography>
                 </li>
                 <li>
@@ -144,7 +149,8 @@ const ResumeExperienceSection = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="body1">
-                JavaScript, React.js, Redux.js, Hooks, React Helmet, Jenkins, One App.
+                JavaScript, React.js, Redux.js, Hooks, React Helmet, Jenkins,
+                One App.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -153,8 +159,8 @@ const ResumeExperienceSection = () => {
           <Image
             src={logoNextiva}
             aria-label="Nextiva"
-            imageStyle={{ width: "35%", minWidth: "310px", height: "auto" }}
-            style={{ paddingTop: matches ? "172px" : "131px" }}
+            imageStyle={{ width: '35%', minWidth: '310px', height: 'auto' }}
+            style={{ paddingTop: matches ? '172px' : '131px' }}
           />
           <Typography variant="h6">Nextiva | Software Engineer II</Typography>
           <Typography variant="subtitle1" gutterBottom>
@@ -223,8 +229,8 @@ const ResumeExperienceSection = () => {
           <Image
             src={logoGeneralDynamics}
             title="General Dynamics"
-            imageStyle={{ width: "35%", minWidth: "310px", height: "auto" }}
-            style={{ paddingTop: matches ? "214px" : "167px" }}
+            imageStyle={{ width: '35%', minWidth: '310px', height: 'auto' }}
+            style={{ paddingTop: matches ? '214px' : '167px' }}
           />
           <Typography variant="h6">
             General Dynamics | Senior Software Engineer II
@@ -307,8 +313,8 @@ const ResumeExperienceSection = () => {
           <Image
             src={logoLockheedMartin}
             aria-label="Lockheed Martin"
-            imageStyle={{ width: "35%", minWidth: "310px", height: "auto" }}
-            style={{ paddingTop: matches ? "230px" : "177px" }}
+            imageStyle={{ width: '35%', minWidth: '310px', height: 'auto' }}
+            style={{ paddingTop: matches ? '230px' : '177px' }}
           />
           <Typography variant="h6">
             Lockheed Martin | Technologies Specialist
@@ -386,8 +392,8 @@ const ResumeExperienceSection = () => {
           <Image
             src={logoGhostArmor}
             aria-label="Ghost Armor"
-            imageStyle={{ width: "35%", minWidth: "310px", height: "auto" }}
-            style={{ paddingTop: matches ? "56px" : "43px" }}
+            imageStyle={{ width: '35%', minWidth: '310px', height: 'auto' }}
+            style={{ paddingTop: matches ? '56px' : '43px' }}
           />
           <Typography variant="h6">Ghost Armor | Web Developer</Typography>
           <Typography variant="subtitle1" gutterBottom>
