@@ -1,18 +1,34 @@
-import React from "react";
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import projectImg1 from "images/project-uas-c2.jpg";
-import projectImg2 from "images/project-nasa-sgss.jpg";
-import projectImg3 from "images/project-nextos.png";
-import projectImg4 from "images/project-walmart.png";
-import projectImg5 from "images/project-mim.jpg";
-import projectImg6 from "images/project-lone-butte-casino.jpg";
-import projectImg7 from "images/project-922-place.jpg";
-import AlbumCardSection from "./AlbumCardSection";
+import React from 'react';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import projectImg1 from 'images/project-uas-c2.jpg';
+import projectImg2 from 'images/project-nasa-sgss.jpg';
+import projectImg3 from 'images/project-nextos.png';
+import projectImg4 from 'images/project-walmart.png';
+import projectImg5 from 'images/project-mim.jpg';
+import projectImg6 from 'images/project-lone-butte-casino.jpg';
+import projectImg7 from 'images/project-922-place.jpg';
+import projectImg8 from 'images/project-grounds-control.jpg';
+import AlbumCardSection from './AlbumCardSection';
 
 const AlbumGridSection = () => (
   <Container className="m-portfolio__card__grid" maxWidth="lg">
     <Grid container spacing={4}>
+      <Grid item xs={12} sm={6} md={4}>
+        <AlbumCardSection
+          imgSrc={projectImg8}
+          imgTitle="Grounds Control"
+          title="Ground Control Company Website"
+          description="One of the largest commerical landscape constractors in 
+                the Southwest needed to redesign their existing Square Space
+                website. The update, built using Symfony Encore, React.js, and 
+                Material-UI, gives them a marketable component to attract new 
+                customers and stay in touch with their existing clientele.
+                Mobile friendly, stylish, and on brand is what they asked so 
+                that is what they received."
+          href="https://groundscontrol.herokuapp.com"
+        />
+      </Grid>
       <Grid item xs={12} sm={6} md={4}>
         <AlbumCardSection
           imgSrc={projectImg1}
