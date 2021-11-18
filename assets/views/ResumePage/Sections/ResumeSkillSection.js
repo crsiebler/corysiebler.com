@@ -1,19 +1,21 @@
-import React from "react";
-import Image from "material-ui-image";
-import Grid from "@material-ui/core/Grid";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import Typography from "@material-ui/core/Typography";
-import SectionHeader from "components/SectionHeader";
-import SportsEsportsIcon from "@material-ui/icons/SportsEsports";
-import SportsBaseballIcon from "@material-ui/icons/SportsBaseball";
-import SportsFootballIcon from "@material-ui/icons/SportsFootball";
-import EmojiNatureIcon from "@material-ui/icons/EmojiNature";
-import MemoryIcon from "@material-ui/icons/Memory";
-import BowlingIcon from "icons/BowlingIcon";
-import logoASU from "images/logo-asufulton.png";
+import React from 'react';
+import Image from 'material-ui-image';
+import Grid from '@material-ui/core/Grid';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import Typography from '@material-ui/core/Typography';
+import SectionHeader from 'components/SectionHeader';
+import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
+import SportsBaseballIcon from '@material-ui/icons/SportsBaseball';
+import SportsFootballIcon from '@material-ui/icons/SportsFootball';
+import EmojiNatureIcon from '@material-ui/icons/EmojiNature';
+import MemoryIcon from '@material-ui/icons/Memory';
+import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
+import BowlingIcon from 'icons/BowlingIcon';
+import ChristianityIcon from 'icons/ChristianityIcon';
+import logoASU from 'images/logo-asufulton.png';
 
 const ResumeSkillSection = () => (
   <Grid
@@ -98,11 +100,11 @@ const ResumeSkillSection = () => (
               <>
                 <Image
                   src={logoASU}
-                  imageStyle={{ height: "auto" }}
+                  imageStyle={{ height: 'auto' }}
                   style={{
-                    width: "100%",
-                    maxWidth: "230px",
-                    paddingTop: "60px",
+                    width: '100%',
+                    maxWidth: '230px',
+                    paddingTop: '60px',
                   }}
                   aria-label="Arizona State University"
                 />
@@ -120,6 +122,12 @@ const ResumeSkillSection = () => (
       <List>
         <ListItem>
           <ListItemIcon>
+            <ChristianityIcon />
+          </ListItemIcon>
+          <ListItemText primary="Faith" />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
             <SportsBaseballIcon />
           </ListItemIcon>
           <ListItemText primary="Softball" />
@@ -135,6 +143,12 @@ const ResumeSkillSection = () => (
             <MemoryIcon />
           </ListItemIcon>
           <ListItemText primary="Arduino & Raspberry Pi" />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <FitnessCenterIcon />
+          </ListItemIcon>
+          <ListItemText primary="Fitness" />
         </ListItem>
         <ListItem>
           <ListItemIcon>
