@@ -152,18 +152,6 @@ const ResumeSkillSection = () => (
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <SportsFootballIcon />
-          </ListItemIcon>
-          <ListItemText primary="Fantasy Football" />
-        </ListItem>
-        <ListItem>
-          <ListItemIcon>
-            <SportsEsportsIcon />
-          </ListItemIcon>
-          <ListItemText primary="eSports" />
-        </ListItem>
-        <ListItem>
-          <ListItemIcon>
             <EmojiNatureIcon />
           </ListItemIcon>
           <ListItemText primary="Hiking" />
