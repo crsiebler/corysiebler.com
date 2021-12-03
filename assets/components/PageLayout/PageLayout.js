@@ -31,7 +31,7 @@ const PageLayout = ({ children, title }) => {
       >
         <AvatarSection />
         <NavigationSection />
-        <AuthorizationSection />
+        {/* <AuthorizationSection /> */}
       </ResponsiveAppBar>
       <ResponsiveDrawer>
         <AvatarSection />
