@@ -7,9 +7,9 @@ import ResponsiveDrawer from 'components/ResponsiveDrawer';
 import ScrollTop from 'components/ScrollTop';
 import StickyFooter from 'components/StickyFooter';
 import { menuItems } from 'constants/navigationConstants';
-// import AvatarSection from "./Sections/AvatarSection";
+import AvatarSection from './Sections/AvatarSection';
 import NavigationSection from './Sections/NavigationSection';
-import AuthorizationSection from './Sections/AuthorizationSection';
+// import AuthorizationSection from './Sections/AuthorizationSection';
 
 const PageLayout = ({ children, title }) => {
   const [menuOpen, setMenuOpen] = React.useState(false);
