@@ -9,7 +9,7 @@ import StickyFooter from 'components/StickyFooter';
 import { menuItems } from 'constants/navigationConstants';
 import AvatarSection from './Sections/AvatarSection';
 import NavigationSection from './Sections/NavigationSection';
-// import AuthorizationSection from './Sections/AuthorizationSection';
+import AuthorizationSection from './Sections/AuthorizationSection';
 
 const PageLayout = ({ children, title }) => {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -31,12 +31,12 @@ const PageLayout = ({ children, title }) => {
       >
         <AvatarSection />
         <NavigationSection />
-        {/* <AuthorizationSection /> */}
+        <AuthorizationSection />
       </ResponsiveAppBar>
       <ResponsiveDrawer>
         <AvatarSection />
         <NavigationSection />
-        {/* <AuthorizationSection /> */}
+        <AuthorizationSection />
       </ResponsiveDrawer>
       <Container
         component="main"
