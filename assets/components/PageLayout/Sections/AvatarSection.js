@@ -1,10 +1,10 @@
-import React from "react";
-import Avatar from "@material-ui/core/Avatar";
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
-import IconButton from "@material-ui/core/IconButton";
-import avatar from "images/avatar.webp";
-import { menuItems } from "constants/navigationConstants";
+import React from 'react';
+import Avatar from '@material-ui/core/Avatar';
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import IconButton from '@material-ui/core/IconButton';
+import avatar from 'images/portrait-avatar.jpg';
+import { menuItems } from 'constants/navigationConstants';
 
 const AvatarSection = () => (
   <Grid
@@ -44,7 +44,7 @@ const AvatarSection = () => (
             aria-controls="menu-appbar"
             aria-haspopup="true"
             href={item.href}
-            target={item.target ? item.target : "_self"}
+            target={item.target ? item.target : '_self'}
           >
             {item.icon}
           </IconButton>

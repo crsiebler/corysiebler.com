@@ -4,7 +4,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/Avatar';
-import avatar from 'images/resume-avatar.jpg';
+import avatar from 'images/portrait-avatar.jpg';
 
 const ResumeBioSection = () => {
   const theme = useTheme();
