@@ -15,6 +15,7 @@ import logoNextiva from 'images/logo-nextiva.png';
 import logoGeneralDynamics from 'images/logo-generaldynamics.png';
 import logoLockheedMartin from 'images/logo-lockheedmartin.png';
 import logoGhostArmor from 'images/logo-ghostarmor.png';
+import logoAngelStudios from 'images/logo-angelstudios.jpg';
 
 const ResumeExperienceSection = () => {
   const theme = useTheme();
@@ -23,6 +24,70 @@ const ResumeExperienceSection = () => {
   return (
     <Grid item md={8} xs={12}>
       <SectionHeader variant="h4" text="Work Experience" />
+      <Grid container direction="column" justify="flex-start" spacing={4}>
+        <Grid item>
+          <div style={{ width: '35%', minWidth: '310px', height: 'auto' }}>
+            <Image
+              src={logoAngelStudios}
+              aria-label="Angel Studios"
+              imageStyle={{ width: '35%', minWidth: '310px', height: 'auto' }}
+              style={{ paddingTop: '113px' }}
+            />
+          </div>
+          <Typography variant="h6">
+            Angel Studios | Senior Software Engineer
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            Phoenix, AZ | January 2022 - Present
+          </Typography>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography variant="subtitle2">
+                Roles and Responsibilities:
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ul>
+                <li>
+                  <Typography variant="body1">
+                    Improve Lighthouse score.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Implement i18n localization.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Conform to GDPR regulations.
+                  </Typography>
+                </li>
+              </ul>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1b-content"
+              id="panel1b-header"
+            >
+              <Typography variant="subtitle2">
+                Technologies Utilized:
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="body1">
+                React.js, Next.js, i18n, Vercel
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+      </Grid>
       <Grid container direction="column" justify="flex-start" spacing={4}>
         <Grid item>
           <div style={{ width: '35%', minWidth: '310px', height: 'auto' }}>
@@ -37,12 +102,12 @@ const ResumeExperienceSection = () => {
             American Express | Senior Software Engineer I
           </Typography>
           <Typography variant="subtitle1" gutterBottom>
-            Scottsdale, AZ | May 2021 - Present
+            Scottsdale, AZ | May 2021 - January 2022
           </Typography>
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel1a-content"
+              aria-controls="panel1a-content"
               id="panel1a-header"
             >
               <Typography variant="subtitle2">
@@ -79,7 +144,7 @@ const ResumeExperienceSection = () => {
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel1b-content"
+              aria-controls="panel1b-content"
               id="panel1b-header"
             >
               <Typography variant="subtitle2">
@@ -140,7 +205,7 @@ const ResumeExperienceSection = () => {
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel1b-content"
+              aria-controls="panel1b-content"
               id="panel1b-header"
             >
               <Typography variant="subtitle2">
@@ -169,7 +234,7 @@ const ResumeExperienceSection = () => {
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel1a-content"
+              aria-controls="panel1a-content"
               id="panel1a-header"
             >
               <Typography variant="subtitle2">
@@ -208,7 +273,7 @@ const ResumeExperienceSection = () => {
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel1b-content"
+              aria-controls="panel1b-content"
               id="panel1b-header"
             >
               <Typography variant="subtitle2">
@@ -241,7 +306,7 @@ const ResumeExperienceSection = () => {
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel2b-content"
+              aria-controls="panel2b-content"
               id="panel2b-header"
             >
               <Typography variant="subtitle2">
@@ -292,7 +357,7 @@ const ResumeExperienceSection = () => {
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel2b-content"
+              aria-controls="panel2b-content"
               id="panel2b-header"
             >
               <Typography variant="subtitle2">
@@ -325,7 +390,7 @@ const ResumeExperienceSection = () => {
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel3a-content"
+              aria-controls="panel3a-content"
               id="panel3a-header"
             >
               <Typography variant="subtitle2">
@@ -371,7 +436,7 @@ const ResumeExperienceSection = () => {
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel3b-content"
+              aria-controls="panel3b-content"
               id="panel3b-header"
             >
               <Typography variant="subtitle2">
@@ -402,7 +467,7 @@ const ResumeExperienceSection = () => {
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel4a-content"
+              aria-controls="panel4a-content"
               id="panel4a-header"
             >
               <Typography variant="subtitle2">
@@ -434,7 +499,7 @@ const ResumeExperienceSection = () => {
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
-              aira-controls="panel4b-content"
+              aria-controls="panel4b-content"
               id="panel4b-header"
             >
               <Typography variant="subtitle2">
