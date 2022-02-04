@@ -38,7 +38,7 @@ const ResumeExperienceSection = () => {
             Angel Studios | Senior Software Engineer
           </Typography>
           <Typography variant="subtitle1" gutterBottom>
-            Phoenix, AZ | January 2022 - Present
+            Remote | January 2022 - Present
           </Typography>
           <Accordion>
             <AccordionSummary
@@ -67,6 +67,11 @@ const ResumeExperienceSection = () => {
                     Conform to GDPR regulations.
                   </Typography>
                 </li>
+                <li>
+                  <Typography variant="body1">
+                    Initialize push notifications through Braze.
+                  </Typography>
+                </li>
               </ul>
             </AccordionDetails>
           </Accordion>
@@ -82,7 +87,7 @@ const ResumeExperienceSection = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="body1">
-                React.js, Next.js, i18n, Vercel
+                React.js, Next.js, i18n, Vercel, Braze
               </Typography>
             </AccordionDetails>
           </Accordion>
