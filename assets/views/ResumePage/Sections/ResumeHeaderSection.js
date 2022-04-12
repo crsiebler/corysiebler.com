@@ -1,11 +1,11 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
-import Link from "@material-ui/core/Link";
-import PhoneIcon from "@material-ui/icons/Phone";
-import EmailIcon from "@material-ui/icons/Email";
-import LanguageIcon from "@material-ui/icons/Language";
-import RoomIcon from "@material-ui/icons/Room";
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailIcon from '@material-ui/icons/Email';
+import LanguageIcon from '@material-ui/icons/Language';
+import RoomIcon from '@material-ui/icons/Room';
 
 const ResumeHeaderSection = () => (
   <Grid container justify="center" className="m-resume__header">
@@ -32,11 +32,11 @@ const ResumeHeaderSection = () => (
         <EmailIcon />
         <Link
           component="a"
-          href="mailto:cory.siebler@protonmail.com"
+          href="mailto:cory.siebler@proton.me"
           color="inherit"
         >
           <Typography variant="caption" className="m-resume__header__caption">
-            cory.siebler@protonmail.com
+            cory.siebler@proton.me
           </Typography>
         </Link>
       </Grid>
