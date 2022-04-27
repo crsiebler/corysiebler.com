@@ -54,6 +54,16 @@ const ResumeExperienceSection = () => {
               <ul>
                 <li>
                   <Typography variant="body1">
+                    Integrate Optimizely for feature flag and A/B testing.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Track events using Segment for analytics.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
                     Improve Lighthouse score.
                   </Typography>
                 </li>
@@ -87,7 +97,8 @@ const ResumeExperienceSection = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography variant="body1">
-                React.js, Next.js, i18n, Vercel, Braze
+                React.js, Next.js, Tailwind, i18n, Vercel, Braze, Optimizely,
+                Segment, Bitmovin
               </Typography>
             </AccordionDetails>
           </Accordion>
