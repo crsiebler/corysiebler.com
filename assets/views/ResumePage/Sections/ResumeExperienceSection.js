@@ -9,13 +9,13 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import SectionHeader from 'components/SectionHeader';
-import logoAexp from 'images/logo-aexp.png';
+import logoAexp from 'images/logo-aexp.webp';
 import logoER2 from 'images/logo-er2.webp';
-import logoNextiva from 'images/logo-nextiva.png';
-import logoGeneralDynamics from 'images/logo-generaldynamics.png';
-import logoLockheedMartin from 'images/logo-lockheedmartin.png';
-import logoGhostArmor from 'images/logo-ghostarmor.png';
-import logoAngelStudios from 'images/logo-angelstudios.jpg';
+import logoNextiva from 'images/logo-nextiva.webp';
+import logoGeneralDynamics from 'images/logo-generaldynamics.webp';
+import logoLockheedMartin from 'images/logo-lockheedmartin.webp';
+import logoGhostArmor from 'images/logo-ghostarmor.webp';
+import logoAngelStudios from 'images/logo-angelstudios.webp';
 
 const ResumeExperienceSection = () => {
   const theme = useTheme();
@@ -54,6 +54,30 @@ const ResumeExperienceSection = () => {
               <ul>
                 <li>
                   <Typography variant="body1">
+                    Achieve Top 5 page ranks for several search queries using
+                    highly optimized articles.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Include JSON-LD and OpenGraph objects on page to improve
+                    sharing and page rank.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Create{' '}
+                    <a
+                      href="https://www.angel.com/blog/the-chosen"
+                      target="_blank"
+                    >
+                      Blog
+                    </a>{' '}
+                    section from Contentful CMS.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
                     Integrate Optimizely for feature flag and A/B testing.
                   </Typography>
                 </li>
@@ -80,6 +104,18 @@ const ResumeExperienceSection = () => {
                 <li>
                   <Typography variant="body1">
                     Initialize push notifications through Braze.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Generate{' '}
+                    <a
+                      href="http://www.angel.com/watch/tuttle-twins#downloadables"
+                      target="_blank"
+                    >
+                      Downloadables
+                    </a>{' '}
+                    section for viewers to access cool artwork.
                   </Typography>
                 </li>
               </ul>

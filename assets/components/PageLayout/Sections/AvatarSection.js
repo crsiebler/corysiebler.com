@@ -3,7 +3,7 @@ import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
-import avatar from 'images/portrait-avatar.jpg';
+import avatar from 'images/portrait-avatar.webp';
 import { menuItems } from 'constants/navigationConstants';
 
 const AvatarSection = () => (

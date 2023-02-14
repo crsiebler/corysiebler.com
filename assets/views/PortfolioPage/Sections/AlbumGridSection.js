@@ -1,14 +1,15 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import projectImg1 from 'images/project-uas-c2.jpg';
-import projectImg2 from 'images/project-nasa-sgss.jpg';
-import projectImg3 from 'images/project-nextos.png';
-import projectImg4 from 'images/project-walmart.png';
-import projectImg5 from 'images/project-mim.jpg';
-import projectImg6 from 'images/project-lone-butte-casino.jpg';
-import projectImg7 from 'images/project-922-place.jpg';
-import projectImg8 from 'images/project-grounds-control.jpg';
+import projectImg1 from 'images/project-uas-c2.webp';
+import projectImg2 from 'images/project-nasa-sgss.webp';
+import projectImg3 from 'images/project-nextos.webp';
+import projectImg4 from 'images/project-walmart.webp';
+import projectImg5 from 'images/project-mim.webp';
+import projectImg6 from 'images/project-lone-butte-casino.webp';
+import projectImg7 from 'images/project-922-place.webp';
+import projectImg8 from 'images/project-grounds-control.webp';
+import projectImg9 from 'images/project-angel-studios.webp';
 import AlbumCardSection from './AlbumCardSection';
 
 const AlbumGridSection = () => (
@@ -16,10 +17,23 @@ const AlbumGridSection = () => (
     <Grid container spacing={4}>
       <Grid item xs={12} sm={6} md={4}>
         <AlbumCardSection
+          imgSrc={projectImg9}
+          imgTitle="Angel Studios"
+          title="Angel Studios Website"
+          description="Home to record breaking movies and TV shows. With 
+                millions of viewers, the audience chooses what the next big hit
+                will be. What makes Angel Studios unique is all the shows are
+                crowdfunded. Watch Angel Studios Light Amplifying Content; 
+                available on TV, mobile, and web."
+          href="https://www.angel.com"
+        />
+      </Grid>
+      <Grid item xs={12} sm={6} md={4}>
+        <AlbumCardSection
           imgSrc={projectImg8}
           imgTitle="Grounds Control"
           title="Ground Control Company Website"
-          description="One of the largest commerical landscape constractors in 
+          description="One of the largest commercial landscape contractors in 
                 the Southwest needed to redesign their existing Square Space
                 website. The update, built using Symfony Encore, React.js, and 
                 Material-UI, gives them a marketable component to attract new 
