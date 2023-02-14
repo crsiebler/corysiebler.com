@@ -29,6 +29,10 @@
     "web-vitals": "^1.1.1",
     "webpack-notifier": "^1.6.0"
   },
+  "engines": {
+    "node": "14.21.2",
+    "npm": "6.14.17"
+  },
   "license": "MIT",
   "private": true,
   "scripts": {
