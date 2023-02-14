@@ -1,13 +1,13 @@
-import React from "react";
-import Image from "material-ui-image";
-import Grid from "@material-ui/core/Grid";
-import Container from "@material-ui/core/Container";
-import Button from "@material-ui/core/Button";
-import Link from "@material-ui/core/Link";
-import Typography from "@material-ui/core/Typography";
-import Hidden from "@material-ui/core/Hidden";
-import InfoIcon from "@material-ui/icons/Info";
-import portrait from "images/portrait.jpg";
+import React from 'react';
+import Image from 'material-ui-image';
+import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
+import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
+import Typography from '@material-ui/core/Typography';
+import Hidden from '@material-ui/core/Hidden';
+import InfoIcon from '@material-ui/icons/Info';
+import portrait from 'images/portrait.webp';
 
 const LandingHeroSection = () => (
   <Container className="m-landing__hero">
@@ -26,10 +26,10 @@ const LandingHeroSection = () => (
         </Typography>
         <Typography variant="body1" color="textPrimary" gutterBottom paragraph>
           I am a full-stack developer specializing in web development with PHP,
-          React, and Python. Want to see more of my work? Check out my{" "}
+          React, and Python. Want to see more of my work? Check out my{' '}
           <Link href="https://github.com/crsiebler" target="_blank">
             GitHub
-          </Link>{" "}
+          </Link>{' '}
           account.
         </Typography>
         <Grid container spacing={1} justify="flex-start">

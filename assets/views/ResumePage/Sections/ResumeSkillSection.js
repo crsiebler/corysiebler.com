@@ -9,13 +9,12 @@ import Typography from '@material-ui/core/Typography';
 import SectionHeader from 'components/SectionHeader';
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 import SportsBaseballIcon from '@material-ui/icons/SportsBaseball';
-import SportsFootballIcon from '@material-ui/icons/SportsFootball';
 import EmojiNatureIcon from '@material-ui/icons/EmojiNature';
 import MemoryIcon from '@material-ui/icons/Memory';
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import BowlingIcon from 'icons/BowlingIcon';
 import ChristianityIcon from 'icons/ChristianityIcon';
-import logoASU from 'images/logo-asufulton.png';
+import logoASU from 'images/logo-asufulton.webp';
 
 const ResumeSkillSection = () => (
   <Grid
@@ -32,7 +31,7 @@ const ResumeSkillSection = () => (
         <ListItem>
           <ListItemText
             primary="JavaScript"
-            secondary="React.js, Redux.js, jQuery"
+            secondary="Next.js, React.js, Redux.js"
           />
         </ListItem>
         <ListItem>
@@ -50,17 +49,17 @@ const ResumeSkillSection = () => (
         <ListItem>
           <ListItemText
             primary="Databases"
-            secondary="Oracle, MySQL, PostgreSQL"
+            secondary="Oracle, Snowflake, MySQL, PostgreSQL"
           />
+        </ListItem>
+        <ListItem>
+          <ListItemText primary="Styling" secondary="Tailwind, Material-UI" />
         </ListItem>
         <ListItem>
           <ListItemText
-            primary="Styling"
-            secondary="Material-UI, Bootstrap, Foundation"
+            primary="Cloud Computing"
+            secondary="Vercel, AWS, Heroku"
           />
-        </ListItem>
-        <ListItem>
-          <ListItemText primary="Cloud Computing" secondary="AWS, Heroku" />
         </ListItem>
         <ListItem>
           <ListItemText
@@ -149,6 +148,12 @@ const ResumeSkillSection = () => (
             <FitnessCenterIcon />
           </ListItemIcon>
           <ListItemText primary="Fitness" />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <SportsEsportsIcon />
+          </ListItemIcon>
+          <ListItemText primary="eSports" />
         </ListItem>
         <ListItem>
           <ListItemIcon>

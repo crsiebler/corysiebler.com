@@ -48,14 +48,14 @@ export const skills = [
     body: 'JavaScript front-end development focusing on React.js with hooks, Redux.js, and Thunk.',
   },
   {
-    title: 'PHP',
-    icons: [PhpIcon, SymfonyIcon, ComposerIcon],
-    body: 'PHP web development utilizing the Symfony framework. 💕 Doctrine, Twig, & Api Platform!',
-  },
-  {
     title: 'HTML5 & CSS3',
     icons: [Html5Icon, Css3Icon, SassIcon],
     body: 'Web development 101 with some extra Sass flavoring.',
+  },
+  {
+    title: 'Styling',
+    icons: [TailwindIcon, MaterialUIIcon, BootstrapIcon, FoundationIcon],
+    body: 'Work with the latest front-end web frameworks and libraries such as Tailwind, Material-UI, Bootstrap, and Foundation.',
   },
   {
     title: 'Python',
@@ -68,9 +68,9 @@ export const skills = [
     body: 'J2EE Applications with Maven, modular design using OSGi, microservies with Spring and Hibernate.',
   },
   {
-    title: 'Microcontrollers',
-    icons: [ArduinoIcon, RaspberryPiIcon],
-    body: 'Designing fun projects for around the house automation and other gadgets using Arduinos and Raspberry Pis.',
+    title: 'PHP',
+    icons: [PhpIcon, SymfonyIcon, ComposerIcon],
+    body: 'PHP web development utilizing the Symfony framework. 💕 Doctrine, Twig, & Api Platform!',
   },
   {
     title: 'Documentation',
@@ -83,9 +83,9 @@ export const skills = [
     body: 'Deployment pipelines for Dockerized containers hosted on Kubernetes clusters and perform tests automation with Jenkins.',
   },
   {
-    title: 'Styling',
-    icons: [MaterialUIIcon, BootstrapIcon, TailwindIcon, FoundationIcon],
-    body: 'Work with the latest front-end web frameworks and libraries such as Tailwind, Material-UI, Bootstrap, and Foundation.',
+    title: 'Microcontrollers',
+    icons: [ArduinoIcon, RaspberryPiIcon],
+    body: 'Designing fun projects for around the house automation and other gadgets using Arduinos and Raspberry Pis.',
   },
   {
     title: 'IAM',
@@ -108,11 +108,6 @@ export const skills = [
     body: 'Can you image a world before Git? I shudder to think about programming without GitHub or Bitbucket.',
   },
   {
-    title: 'Misc',
-    icons: [GraphQLIcon, WebpackIcon, NodejsIcon],
-    body: 'The latest APIs with GraphQL. Bundle up applications with Webpack, Babel, Node.js, and Symfony Encore.',
-  },
-  {
     title: 'IDEs',
     icons: [VisualStudioCodeIcon, JetBrainsIcon, EclipseIcon],
     body: "A developer's best friend. Visual Studio Code 💯 because its free but JetBrains makes great products as well.",
@@ -121,5 +116,10 @@ export const skills = [
     title: 'Cloud Computing',
     icons: [AwsIcon, HerokuIcon, VercelIcon],
     body: 'Utilize cloud infrastructure such as Heroku, Vercel, and AWS (Elastic Beanstalk, RDS, S3, Route 53).',
+  },
+  {
+    title: 'Misc',
+    icons: [GraphQLIcon, WebpackIcon, NodejsIcon],
+    body: 'The latest APIs with GraphQL. Bundle up applications with Webpack, Babel, Node.js, and Symfony Encore.',
   },
 ];
