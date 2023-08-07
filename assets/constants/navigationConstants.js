@@ -23,7 +23,7 @@ export const menuItems = [
   },
   {
     ariaLabel: 'email',
-    href: 'mailto:cory.siebler@proton.me',
+    href: 'mailto:cory.siebler@pm.me',
     icon: <MailIcon style={{ color: iconColorPrimary }} />,
   },
   {

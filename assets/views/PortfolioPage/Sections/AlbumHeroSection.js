@@ -1,8 +1,8 @@
-import React from "react";
-import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import Grid from "@material-ui/core/Grid";
+import React from 'react';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 
 const AlbumHeroSection = () => (
   <Container maxWidth="md" className="m-portfolio__hero">
@@ -28,7 +28,7 @@ const AlbumHeroSection = () => (
           variant="contained"
           color="primary"
           component="a"
-          href="/contact"
+          href="mailto:corysiebler@pm.me"
         >
           Contact Me
         </Button>
