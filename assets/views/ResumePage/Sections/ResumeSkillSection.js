@@ -29,10 +29,7 @@ const ResumeSkillSection = () => (
       <SectionHeader variant="h5" text="Skills" />
       <List dense={true}>
         <ListItem>
-          <ListItemText
-            primary="JavaScript"
-            secondary="Next.js, React.js, Redux.js"
-          />
+          <ListItemText primary="JavaScript" secondary="Next.js, React.js" />
         </ListItem>
         <ListItem>
           <ListItemText primary="Python" secondary="Pyramid, Django" />

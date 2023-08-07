@@ -67,10 +67,7 @@ const ResumeExperienceSection = () => {
                 <li>
                   <Typography variant="body1">
                     Create{' '}
-                    <a
-                      href="https://www.angel.com/blog/the-chosen"
-                      target="_blank"
-                    >
+                    <a href="https://www.angel.com/blog" target="_blank">
                       Blog
                     </a>{' '}
                     section from Contentful CMS.
@@ -134,7 +131,7 @@ const ResumeExperienceSection = () => {
             <AccordionDetails>
               <Typography variant="body1">
                 React.js, Next.js, Tailwind, i18n, Vercel, Braze, Optimizely,
-                Segment, Bitmovin
+                Segment, Bitmovin, Cloudinary, Contentful
               </Typography>
             </AccordionDetails>
           </Accordion>

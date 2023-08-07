@@ -32,7 +32,7 @@ const AlbumGridSection = () => (
         <AlbumCardSection
           imgSrc={projectImg8}
           imgTitle="Grounds Control"
-          title="Ground Control Company Website"
+          title="Grounds Control Company Website"
           description="One of the largest commercial landscape contractors in 
                 the Southwest needed to redesign their existing Square Space
                 website. The update, built using Symfony Encore, React.js, and 

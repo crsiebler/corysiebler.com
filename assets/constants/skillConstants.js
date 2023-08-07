@@ -45,7 +45,7 @@ export const skills = [
   {
     title: 'JavaScript',
     icons: [JavaScriptIcon, ReactIcon, ReduxIcon],
-    body: 'JavaScript front-end development focusing on React.js with hooks, Redux.js, and Thunk.',
+    body: 'JavaScript front-end development focusing on React.js with hooks and Next.js.',
   },
   {
     title: 'HTML5 & CSS3',

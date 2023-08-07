@@ -30,13 +30,9 @@ const ResumeHeaderSection = () => (
       </Grid>
       <Grid container item alignItems="center">
         <EmailIcon />
-        <Link
-          component="a"
-          href="mailto:cory.siebler@proton.me"
-          color="inherit"
-        >
+        <Link component="a" href="mailto:cory.siebler@pm.me" color="inherit">
           <Typography variant="caption" className="m-resume__header__caption">
-            cory.siebler@proton.me
+            cory.siebler@pm.me
           </Typography>
         </Link>
       </Grid>
