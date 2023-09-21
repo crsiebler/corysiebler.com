@@ -20,6 +20,7 @@ import JenkinsIcon from 'icons/JenkinsIcon';
 import KubernetesIcon from 'icons/KubernetesIcon';
 import MaterialUIIcon from 'icons/MaterialUIIcon';
 import MysqlIcon from 'icons/MysqlIcon';
+import NextjsIcon from 'icons/NextjsIcon';
 import NodejsIcon from 'icons/NodejsIcon';
 import NginxIcon from 'icons/NginxIcon';
 import OracleIcon from 'icons/OracleIcon';
@@ -30,7 +31,6 @@ import RabbitMQIcon from 'icons/RabbitMQIcon';
 import RaspberryPiIcon from 'icons/RaspberryPiIcon';
 import ReactIcon from 'icons/ReactIcon';
 import RedisIcon from 'icons/RedisIcon';
-import ReduxIcon from 'icons/ReduxIcon';
 import SassIcon from 'icons/SassIcon';
 import SpringIcon from 'icons/SpringIcon';
 import StorybookIcon from 'icons/StorybookIcon';
@@ -44,7 +44,7 @@ import WebpackIcon from 'icons/WebpackIcon';
 export const skills = [
   {
     title: 'JavaScript',
-    icons: [JavaScriptIcon, ReactIcon, ReduxIcon],
+    icons: [JavaScriptIcon, ReactIcon, NextjsIcon],
     body: 'JavaScript front-end development focusing on React.js with hooks and Next.js.',
   },
   {
