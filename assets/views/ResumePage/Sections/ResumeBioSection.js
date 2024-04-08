@@ -26,10 +26,8 @@ const ResumeBioSection = () => {
           Software engineer with a wide array of talents and expertise including
           web development, database administration, and project management.
           Looking for a senior software engineering position where I am building
-          new and innovative applications. Prefer Python and PHP work for
-          back-end applications, but interested in Go as a new and upcoming
-          technology. Currently focused on React.js front-end software using
-          hooks for ease in state management and efficiency of rendering.
+          new and innovative applications. Current focus is React.js using the
+          Next.js framework.
         </Typography>
       </Grid>
     </Grid>

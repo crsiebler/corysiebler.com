@@ -38,7 +38,7 @@ const ResumeExperienceSection = () => {
             Angel Studios | Senior Software Engineer
           </Typography>
           <Typography variant="subtitle1" gutterBottom>
-            Remote | January 2022 - Present
+            Remote | January 2022 - April 2024
           </Typography>
           <Accordion>
             <AccordionSummary
@@ -54,8 +54,35 @@ const ResumeExperienceSection = () => {
               <ul>
                 <li>
                   <Typography variant="body1">
-                    Achieve Top 5 page ranks for several search queries using
-                    highly optimized articles.
+                    Achieve Top 5 page rank dozens of search queries using
+                    highly optimized pages and articles.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Create the{' '}
+                    <a href="http://www.angel.com/about" target="_blank">
+                      About
+                    </a>{' '}
+                    page for users to learn more information on Angel Studios.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Improve site experience scores on Ahrefs from 70s to 90
+                    through SEO best practices.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Generate{' '}
+                    <a
+                      href="http://www.angel.com/watch/tuttle-twins#downloadables"
+                      target="_blank"
+                    >
+                      Downloadables
+                    </a>{' '}
+                    section for fans to access cool artwork.
                   </Typography>
                 </li>
                 <li>
@@ -66,21 +93,14 @@ const ResumeExperienceSection = () => {
                 </li>
                 <li>
                   <Typography variant="body1">
-                    Create{' '}
-                    <a href="https://www.angel.com/blog" target="_blank">
-                      Blog
-                    </a>{' '}
-                    section from Contentful CMS.
+                    Integrate Optimizely for A/B testing leading to 10-20%
+                    increased revenue and viewership through experimentation.
                   </Typography>
                 </li>
                 <li>
                   <Typography variant="body1">
-                    Integrate Optimizely for feature flag and A/B testing.
-                  </Typography>
-                </li>
-                <li>
-                  <Typography variant="body1">
-                    Track events using Segment for analytics.
+                    Track user events using Segment for analytics and
+                    determining the success of campaigns.
                   </Typography>
                 </li>
                 <li>
@@ -90,7 +110,8 @@ const ResumeExperienceSection = () => {
                 </li>
                 <li>
                   <Typography variant="body1">
-                    Implement i18n localization.
+                    Implement i18n localization for a total of 32 different
+                    regions.
                   </Typography>
                 </li>
                 <li>
@@ -105,14 +126,12 @@ const ResumeExperienceSection = () => {
                 </li>
                 <li>
                   <Typography variant="body1">
-                    Generate{' '}
-                    <a
-                      href="http://www.angel.com/watch/tuttle-twins#downloadables"
-                      target="_blank"
-                    >
-                      Downloadables
+                    Create a website{' '}
+                    <a href="https://www.angel.com/blog" target="_blank">
+                      Blog
                     </a>{' '}
-                    section for viewers to access cool artwork.
+                    feature from Contentful CMS data that achieved thousands of
+                    daily hits organically. Create section from Contentful CMS.
                   </Typography>
                 </li>
               </ul>
@@ -131,7 +150,7 @@ const ResumeExperienceSection = () => {
             <AccordionDetails>
               <Typography variant="body1">
                 React.js, Next.js, Tailwind, i18n, Vercel, Braze, Optimizely,
-                Segment, Bitmovin, Cloudinary, Contentful
+                Segment, Snowflake, Bitmovin, Cloudinary, Contentful
               </Typography>
             </AccordionDetails>
           </Accordion>

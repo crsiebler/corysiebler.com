@@ -13,11 +13,7 @@ const LandingSkillsSection = () => (
       the software industry. From database management to front-end libraries, I
       contribute to all aspects of the software architecture. I enjoy
       discovering new technology and I am always open to exploring the latest
-      trends in engineering. See what I'm learning on{' '}
-      <Link href="https://app.pluralsight.com/profile/csiebler" target="_blank">
-        Pluralsight
-      </Link>
-      .
+      trends in engineering.
     </Typography>
     <LandingSkillsGridSection />
   </Container>

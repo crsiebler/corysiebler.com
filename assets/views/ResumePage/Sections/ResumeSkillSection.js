@@ -13,7 +13,6 @@ import EmojiNatureIcon from '@material-ui/icons/EmojiNature';
 import MemoryIcon from '@material-ui/icons/Memory';
 import FitnessCenterIcon from '@material-ui/icons/FitnessCenter';
 import BowlingIcon from 'icons/BowlingIcon';
-import ChristianityIcon from 'icons/ChristianityIcon';
 import logoASU from 'images/logo-asufulton.webp';
 
 const ResumeSkillSection = () => (
@@ -116,12 +115,6 @@ const ResumeSkillSection = () => (
     <Grid item>
       <SectionHeader variant="h5" text="Interests" />
       <List>
-        <ListItem>
-          <ListItemIcon>
-            <ChristianityIcon />
-          </ListItemIcon>
-          <ListItemText primary="Faith" />
-        </ListItem>
         <ListItem>
           <ListItemIcon>
             <SportsBaseballIcon />
