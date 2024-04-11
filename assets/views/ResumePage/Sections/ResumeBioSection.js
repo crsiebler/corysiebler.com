@@ -27,7 +27,7 @@ const ResumeBioSection = () => {
           web development, database administration, and project management.
           Looking for a senior software engineering position where I am building
           new and innovative applications. Current focus is React.js using the
-          Next.js framework.
+          Next.js framework with Tailwind CSS, GraphQL, and TypeScript.
         </Typography>
       </Grid>
     </Grid>
