@@ -40,7 +40,7 @@ const AlbumGridSection = () => (
                 customers and stay in touch with their existing clientele.
                 Mobile friendly, stylish, and on brand is what they asked so 
                 that is what they received."
-          href="https://groundscontrol.herokuapp.com"
+          href="https://groundscontrol.com"
         />
       </Grid>
       <Grid item xs={12} sm={6} md={4}>

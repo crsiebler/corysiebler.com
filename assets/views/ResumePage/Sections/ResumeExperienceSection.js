@@ -16,6 +16,7 @@ import logoGeneralDynamics from 'images/logo-generaldynamics.webp';
 import logoLockheedMartin from 'images/logo-lockheedmartin.webp';
 import logoGhostArmor from 'images/logo-ghostarmor.webp';
 import logoAngelStudios from 'images/logo-angelstudios.webp';
+import logoMegaplanit from 'images/logo-megaplanit.webp';
 
 const ResumeExperienceSection = () => {
   const theme = useTheme();
@@ -24,6 +25,67 @@ const ResumeExperienceSection = () => {
   return (
     <Grid item md={8} xs={12}>
       <SectionHeader variant="h4" text="Work Experience" />
+      <Grid container direction="column" justify="flex-start" spacing={4}>
+        <Grid item>
+          <div style={{ width: '35%', minWidth: '310px', height: 'auto' }}>
+            <Image
+              src={logoMegaplanit}
+              aria-label="MegaplanIT"
+              imageStyle={{ width: '35%', minWidth: '310px', height: 'auto' }}
+              style={{ paddingTop: '113px' }}
+            />
+          </div>
+          <Typography variant="h6">
+            MegaplanIT | Senior Software Engineer
+          </Typography>
+          <Typography variant="subtitle1" gutterBottom>
+            Scottsdale, AZ | May 2024 - Present
+          </Typography>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography variant="subtitle2">
+                Roles and Responsibilities:
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ul>
+                <li>
+                  <Typography variant="body1">
+                    Develop new data visualizations for client data.
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    Architect new service for security incident reporting and 
+                    alarm assessment.
+                  </Typography>
+                </li>
+              </ul>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1b-content"
+              id="panel1b-header"
+            >
+              <Typography variant="subtitle2">
+                Technologies Utilized:
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="body1">
+                React.js, Next.js, ChakraUI, Vercel, Express.js, Golang, Hasura,
+                PostgreSQL, DigitalOcean, Auth0
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+      </Grid>
       <Grid container direction="column" justify="flex-start" spacing={4}>
         <Grid item>
           <div style={{ width: '35%', minWidth: '310px', height: 'auto' }}>

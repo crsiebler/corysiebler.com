@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
 import Typography from '@material-ui/core/Typography';
 import SectionHeader from 'components/SectionHeader';
 import LandingSkillsGridSection from './LandingSkillsGridSection';
