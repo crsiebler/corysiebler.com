@@ -31,8 +31,8 @@ const ResumeExperienceSection = () => {
             <Image
               src={logoMegaplanit}
               aria-label="MegaplanIT"
-              imageStyle={{ width: '35%', minWidth: '310px', height: 'auto', backgroundColor: '#202123' }}
-              style={{ paddingTop: '113px' }}
+              imageStyle={{ width: '35%', minWidth: '310px', height: 'auto', backgroundColor: '#202123', padding: '10px' }}
+              style={{ paddingTop: '36px' }}
             />
           </div>
           <Typography variant="h6">
@@ -225,7 +225,7 @@ const ResumeExperienceSection = () => {
               src={logoAexp}
               aria-label="American Express"
               imageStyle={{ width: '35%', minWidth: '310px', height: 'auto' }}
-              style={{ paddingTop: '36px' }}
+              style={{ paddingTop: '117px' }}
             />
           </div>
           <Typography variant="h6">
