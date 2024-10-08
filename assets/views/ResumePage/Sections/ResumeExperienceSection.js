@@ -32,7 +32,7 @@ const ResumeExperienceSection = () => {
               src={logoMegaplanit}
               aria-label="MegaplanIT"
               imageStyle={{ width: '35%', minWidth: '310px', height: 'auto', backgroundColor: '#202123', padding: '10px' }}
-              style={{ paddingTop: '48px' }}
+              style={{ paddingTop: '54px' }}
             />
           </div>
           <Typography variant="h6">
