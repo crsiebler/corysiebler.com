@@ -1,0 +1,1 @@
+export { useCloudinaryImage } from './useCloudinaryImage';

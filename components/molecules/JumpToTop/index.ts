@@ -1,0 +1,1 @@
+export { JumpToTop } from './JumpToTop';

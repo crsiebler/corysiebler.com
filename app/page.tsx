@@ -1,3 +1,9 @@
+import { HomeTemplate } from '@/templates/HomeTemplate';
+
 export default function Home() {
-  return <div>Hello World</div>;
+  return (
+    <main className="bg-white">
+      <HomeTemplate />
+    </main>
+  );
 }
