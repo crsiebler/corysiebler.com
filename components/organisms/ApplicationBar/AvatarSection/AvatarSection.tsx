@@ -1,31 +1,33 @@
 import React from 'react';
-import Image from 'next/image';
 import { linkItems } from 'constants/navigation';
+import { Text } from '@/atoms/Text';
+import { AvatarImage } from '@/atoms/Images/AvatarImage';
 
 export function AvatarSection() {
   return (
-    <div className="flex flex-col items-center space-y-6">
-      <h1 className="text-center text-xl font-semibold">Cory Siebler</h1>
-      <div className="h-24 w-24 overflow-hidden rounded-full">
-        <Image
-          src="/images/portrait-avatar.webp"
-          alt="Cory Siebler"
-          width={96}
-          height={96}
-          className="object-cover"
-        />
+    <div className="flex flex-col items-center space-y-6 pt-4">
+      <Text className="text-center" variant="h6">
+        Cory Siebler
+      </Text>
+      <div className="size-36 overflow-hidden rounded-full">
+        <AvatarImage />
       </div>
-      <p className="text-center text-sm text-gray-600">
+      <Text
+        component="p"
+        className="text-center"
+        variant="body2"
+        weight="light"
+      >
         Hi! My name is Cory Siebler. Welcome to my personal website!
-      </p>
-      <div className="flex w-full max-w-xs justify-evenly">
+      </Text>
+      <div className="flex w-full max-w-xs flex-wrap justify-center">
         {linkItems.map((item, index) => (
           <a
-            key={index}
-            href={item.href}
-            target={item.target ? item.target : '_self'}
             aria-label={item.ariaLabel}
-            className="rounded-full p-2 transition hover:bg-gray-200"
+            className="flex w-1/3 justify-center rounded-full p-2 transition hover:bg-gray-200"
+            href={item.href}
+            key={index}
+            target={item.target ? item.target : '_self'}
           >
             {item.icon()}
           </a>

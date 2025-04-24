@@ -1,9 +1,10 @@
 import { ReactNode } from 'react';
 import {
   ContactIcon,
+  GitHubIcon,
   HomeIcon,
   InfoIcon,
-  InstagramIcon,
+  LinkedInIcon,
   MailIcon,
   PhoneIcon,
   XIcon,
@@ -17,6 +18,12 @@ type LinkItems = {
 };
 
 export const linkItems: LinkItems[] = [
+  {
+    ariaLabel: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/cory-siebler/',
+    icon: (size = 20) => <LinkedInIcon size={size} />,
+    target: '_blank',
+  },
   {
     ariaLabel: 'phone',
     href: 'tel:14803192922',
@@ -34,9 +41,9 @@ export const linkItems: LinkItems[] = [
     target: '_blank',
   },
   {
-    ariaLabel: 'Instagram',
-    href: 'https://instagram.com/groundscontrolllc',
-    icon: (size = 20) => <InstagramIcon size={size} />,
+    ariaLabel: 'GitHub',
+    href: 'https://github.com/crsiebler',
+    icon: (size = 20) => <GitHubIcon size={size} />,
     target: '_blank',
   },
 ];

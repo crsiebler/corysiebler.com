@@ -8,7 +8,7 @@ interface ApplicationBarProps {
 
 export function ApplicationBar({ title }: ApplicationBarProps) {
   return (
-    <header className="bg-primary w-full">
+    <header className="bg-primary text-white">
       <NavigationBar title={title}>
         <AvatarSection />
       </NavigationBar>

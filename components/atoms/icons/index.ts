@@ -10,6 +10,7 @@ export { EcoIcon } from './EcoIcon';
 export { ErrorIcon } from './ErrorIcon';
 export { FacebookIcon } from './FacebookIcon';
 export { FlowerIcon } from './FlowerIcon';
+export { GitHubIcon } from './GitHubIcon';
 export { GrassIcon } from './GrassIcon';
 export { GroupIcon } from './GroupIcon';
 export { HomeIcon } from './HomeIcon';
