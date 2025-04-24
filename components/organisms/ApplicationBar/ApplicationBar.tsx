@@ -1,21 +1,18 @@
-'use client';
-
-import { useDisplay } from '@/lib/hooks';
 import { NavigationBar } from '@/molecules/NavigationBar';
-import { NavigationDrawer } from '@/molecules/NavigationDrawer';
 import { AvatarSection } from './AvatarSection';
+import { NavigationPane } from '@/molecules/NavigationPane';
 
-export function ApplicationBar() {
-  const { drawer, hideDrawer, showDrawer } = useDisplay((state) => state);
+interface ApplicationBarProps {
+  title: string;
+}
 
+export function ApplicationBar({ title }: ApplicationBarProps) {
   return (
     <header className="bg-primary w-full">
-      <NavigationBar onClick={showDrawer} menuOpen={false} title={''}>
+      <NavigationBar title={title}>
         <AvatarSection />
       </NavigationBar>
-      <NavigationDrawer isOpen={drawer} onClose={hideDrawer}>
-        <AvatarSection />
-      </NavigationDrawer>
+      <NavigationPane />
     </header>
   );
 }

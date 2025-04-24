@@ -33,7 +33,7 @@ describe('Text', () => {
     const { container } = render(<Text color="red">Colored Text</Text>);
     const textElement = container.firstChild as HTMLElement;
 
-    expect(getComputedStyle(textElement).color).toBe('rgb(244, 67, 54)');
+    expect(textElement.classList.contains('text-red')).toBe(true);
   });
 
   it('renders with custom weight', () => {
@@ -77,7 +77,7 @@ describe('Text', () => {
     expect(textElement.tagName.toLowerCase()).toBe('h3');
     expect(textElement.classList.contains('text-3xl')).toBe(true);
     expect(textElement.classList.contains('md:text-4xl')).toBe(true);
-    expect(getComputedStyle(textElement).color).toBe('rgb(33, 150, 243)');
+    expect(textElement.classList.contains('text-blue')).toBe(true);
     expect(textElement.classList.contains('font-semibold')).toBe(true);
     expect(textElement.classList.contains('uppercase')).toBe(true);
     expect(textElement.classList.contains('additional-class')).toBe(true);

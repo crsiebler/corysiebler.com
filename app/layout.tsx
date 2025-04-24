@@ -23,7 +23,7 @@ export default function RootLayout({
         <ShortcutIcon />
       </head>
       <body className={clsx('bg-shade-dark', roboto.className)}>
-        <ApplicationBar />
+        <ApplicationBar title={metadata.title} />
         <div id="anchor" />
         {children}
         <JumpToTop />
