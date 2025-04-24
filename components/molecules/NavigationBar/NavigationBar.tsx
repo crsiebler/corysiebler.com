@@ -15,7 +15,7 @@ export function NavigationBar({
   title,
 }: NavigationBarProps) {
   return (
-    <div className="bg-tint-lightest flex w-full px-6 py-2">
+    <div className="flex w-full px-6 py-2">
       <Button
         aria-label="menu"
         color="tint-lightest"

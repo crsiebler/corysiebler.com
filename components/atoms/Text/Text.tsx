@@ -1,6 +1,5 @@
 import { HTMLAttributes, ReactNode } from 'react';
 import clsx from 'clsx';
-import { colors } from '@/constants/colors';
 
 type Weight =
   | 'thin'
@@ -94,11 +93,11 @@ export function Text({
       className={clsx(
         variantClasses[variant] ?? 'text-base',
         fontWeights[weight] ?? 'font-normal',
+        `text-[var(--color-${color})]`,
         italic && 'italic',
         uppercase && 'uppercase',
         className,
       )}
-      style={{ color: colors[color] ?? 'inherit' }}
       {...props}
     >
       {children}

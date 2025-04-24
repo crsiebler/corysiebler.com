@@ -9,7 +9,7 @@ export function ApplicationBar() {
   const { drawer, hideDrawer, showDrawer } = useDisplay((state) => state);
 
   return (
-    <header className="bg-tint-lightest fixed top-0 z-20 w-full">
+    <header className="bg-primary w-full">
       <NavigationBar onClick={showDrawer} menuOpen={false} title={''}>
         <AvatarSection />
       </NavigationBar>
