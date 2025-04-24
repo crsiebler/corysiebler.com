@@ -15,7 +15,7 @@ export function NavigationBar({ children, title }: NavigationBarProps) {
 
   return (
     <div className="px flex w-full flex-col py-2">
-      <div className="flex gap-1">
+      <div className="gap flex">
         <Button
           aria-label="menu"
           color="tint-lightest"
@@ -26,7 +26,7 @@ export function NavigationBar({ children, title }: NavigationBarProps) {
           <MenuIcon className="text-white" size={24} />
         </Button>
         <div className="flex items-center">
-          <Text color="white" variant="h4" weight="medium">
+          <Text color="white" variant="h5">
             {title.split('|')[0].trim()}
           </Text>
         </div>
