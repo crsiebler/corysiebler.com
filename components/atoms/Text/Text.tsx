@@ -93,7 +93,7 @@ export function Text({
       className={clsx(
         variantClasses[variant] ?? 'text-base',
         fontWeights[weight] ?? 'font-normal',
-        `text-[var(--color-${color})]`,
+        `text-${color}`,
         italic && 'italic',
         uppercase && 'uppercase',
         className,

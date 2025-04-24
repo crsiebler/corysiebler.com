@@ -2,12 +2,10 @@ import { create } from 'zustand';
 
 interface DisplayState {
   drawer: boolean;
-  hideDrawer: () => void;
-  showDrawer: () => void;
+  toggleDrawer: () => void;
 }
 
 export const useDisplay = create<DisplayState>((set) => ({
   drawer: false,
-  hideDrawer: () => set(() => ({ drawer: false })),
-  showDrawer: () => set(() => ({ drawer: true })),
+  toggleDrawer: () => set((state) => ({ drawer: !state.drawer })),
 }));

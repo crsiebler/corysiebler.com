@@ -18,7 +18,7 @@ export function getMetadata({
     alternates: {
       canonical: `${baseUrl}${path}`,
     },
-    title: `${page}Cory Siebler - Senior Software Engineer & Business Owner`,
+    title: `${page}Cory Siebler - Senior Software Engineer`,
     description:
       description ??
       'Cory Siebler is a Senior Software Engineer, business owner of Phi Technology Solutions, LLC, and a technical lead at OneOrigin. Explore his expertise.',
@@ -26,7 +26,7 @@ export function getMetadata({
       'Cory Siebler, Senior Software Engineer, Phi Technology Solutions, LLC, OneOrigin, Triangulator, Arizona State University, full-stack developer, Next.js, Python, React.js, web development, software architecture, portfolio, GitHub',
     author: 'Cory Siebler',
     openGraph: {
-      title: `${page}Cory Siebler - Senior Software Engineer & Business Owner`,
+      title: `${page}Cory Siebler - Senior Software Engineer`,
       type: 'website',
       locale: 'en_US',
       url: `${baseUrl}${path}`,
@@ -46,7 +46,7 @@ export function getMetadata({
       name: 'Cory Siebler',
       image: `${baseUrl}/images/portrait.jpg`,
       description:
-        'Cory Siebler is a Senior Software Engineer, business owner of Phi Technology Solutions, LLC, and a technical lead at OneOrigin. Explore his expertise.',
+        'Cory Siebler is a Software Engineer, business owner of Phi Technology Solutions, LLC, and a technical lead at OneOrigin. Explore his expertise.',
       url: baseUrl,
       sameAs: [
         'https://github.com/corysiebler',
