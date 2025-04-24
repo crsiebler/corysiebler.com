@@ -1,26 +1,58 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import 'tailwindcss';
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-analogous-1: #6d7434;
+  --color-analogous-2: #34743b;
+  --color-analogous-3: #4d7434;
+  --color-black: #000000;
+  --color-blue: #2196f3;
+  --color-complimentary: #5b3474;
+  --color-error: #f44336;
+  --color-green: #4caf50;
+  --color-info: #2196f3;
+  --color-inherit: inherit;
+  --color-monochromatic-dark: #41622c;
+  --color-monochromatic-darker: #365124;
+  --color-monochromatic-darkest: #2a3f1c;
+  --color-monochromatic-light: #59863c;
+  --color-monochromatic-lighter: #649744;
+  --color-monochromatic-lightest: #70a94c;
+  --color-primary: #3f50b5;
+  --color-red: #f44336;
+  --color-secondary: #eeeeee;
+  --color-shade-dark: #2a2a2a;
+  --color-shade-darker: #161616;
+  --color-shade-darkest: #030303;
+  --color-shade-light: #515151;
+  --color-shade-lighter: #656565;
+  --color-shade-lightest: #767676;
+  --color-shade: #3e3e3e;
+  --color-split-complementary-1: #74346d;
+  --color-split-complementary-2: #3b3474;
+  --color-split-complementary-3: #4d7434;
+  --color-success: #4caf50;
+  --color-tetradic-1: #745b34;
+  --color-tetradic-2: #344d74;
+  --color-tetradic-3: #5b3474;
+  --color-tetradic-4: #4d7434;
+  --color-tint-dark: #aaaaaa;
+  --color-tint-darker: #969696;
+  --color-tint-darkest: #828282;
+  --color-tint-light: #d1d1d1;
+  --color-tint-lighter: #e4e4e4;
+  --color-tint-lightest: #f8f8f8;
+  --color-tint: #bdbdbd;
+  --color-triadic-1: #74344d;
+  --color-triadic-2: #344d74;
+  --color-triadic-3: #4d7434;
+  --color-warning: #ff9800;
+  --color-white: #ffffff;
+  --font-size-xxs: 0.5rem;
+  --text-shadow-lg: 0 8px 16px var(--tw-shadow-color);
+  --text-shadow-sm: 0 1px 2px var(--tw-shadow-color);
+  --text-shadow: 0 2px 4px var(--tw-shadow-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+html {
+  font-family: var(--font-roboto);
 }
