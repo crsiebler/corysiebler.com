@@ -1,5 +1,5 @@
 import { fireEvent, render } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { NavigationBar } from '@/molecules/NavigationBar';
 
 describe('NavigationBar', () => {

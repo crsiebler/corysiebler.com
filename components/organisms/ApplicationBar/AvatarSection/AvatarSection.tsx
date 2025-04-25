@@ -1,7 +1,8 @@
 import React from 'react';
-import { linkItems } from 'constants/navigation';
-import { Text } from '@/atoms/Text';
+import Link from 'next/link';
 import { AvatarImage } from '@/atoms/Images/AvatarImage';
+import { Text } from '@/atoms/Text';
+import { linkItems } from 'constants/navigation';
 
 export function AvatarSection() {
   return (
@@ -20,9 +21,9 @@ export function AvatarSection() {
       >
         Hi! My name is Cory Siebler. Welcome to my personal website!
       </Text>
-      <div className="flex w-full max-w-xs flex-wrap justify-center">
+      <div className="flex w-full max-w-xs flex-wrap justify-center space-y-2">
         {linkItems.map((item, index) => (
-          <a
+          <Link
             aria-label={item.ariaLabel}
             className="flex w-1/3 justify-center rounded-full p-2 transition hover:bg-gray-200"
             href={item.href}
@@ -30,7 +31,7 @@ export function AvatarSection() {
             target={item.target ? item.target : '_self'}
           >
             {item.icon()}
-          </a>
+          </Link>
         ))}
       </div>
     </div>
