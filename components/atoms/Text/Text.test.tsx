@@ -30,10 +30,13 @@ describe('Text', () => {
   });
 
   it('renders with custom color', () => {
-    const { container } = render(<Text color="red">Colored Text</Text>);
+    const colorClass = 'text-red-500';
+    const { container } = render(
+      <Text className={colorClass}>Colored Text</Text>,
+    );
     const textElement = container.firstChild as HTMLElement;
 
-    expect(textElement.classList.contains('text-red')).toBe(true);
+    expect(textElement.classList.contains(colorClass)).toBe(true);
   });
 
   it('renders with custom weight', () => {
@@ -64,7 +67,6 @@ describe('Text', () => {
       <Text
         component="h3"
         variant="h3"
-        color="blue"
         weight="semibold"
         uppercase
         className="additional-class"
@@ -77,7 +79,6 @@ describe('Text', () => {
     expect(textElement.tagName.toLowerCase()).toBe('h3');
     expect(textElement.classList.contains('text-3xl')).toBe(true);
     expect(textElement.classList.contains('md:text-4xl')).toBe(true);
-    expect(textElement.classList.contains('text-blue')).toBe(true);
     expect(textElement.classList.contains('font-semibold')).toBe(true);
     expect(textElement.classList.contains('uppercase')).toBe(true);
     expect(textElement.classList.contains('additional-class')).toBe(true);

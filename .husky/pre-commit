@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx lint-staged
-npx tsc --noEmit
-bun vitest run
+npx lint-staged || exit 1
+npx tsc --noEmit || exit 1
+bun vitest run || exit 1

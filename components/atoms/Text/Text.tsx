@@ -39,7 +39,6 @@ type Variant =
 interface TextProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;
   className?: string;
-  color?: string;
   component?: Component;
   italic?: boolean;
   variant?: Variant;
@@ -74,7 +73,6 @@ const fontWeights: Record<Weight, string> = {
 export function Text({
   children,
   className,
-  color = 'inherit',
   component,
   italic = false,
   variant = 'body1',
@@ -93,7 +91,6 @@ export function Text({
       className={clsx(
         variantClasses[variant] ?? 'text-base',
         fontWeights[weight] ?? 'font-normal',
-        `text-${color}`,
         italic && 'italic',
         uppercase && 'uppercase',
         className,
