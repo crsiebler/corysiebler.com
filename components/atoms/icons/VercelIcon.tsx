@@ -1,6 +1,6 @@
 import { IconProps } from './types';
 
-export function NodejsIcon({
+export function VercelIcon({
   className,
   fill = 'currentColor',
   size = 32,
@@ -12,9 +12,9 @@ export function NodejsIcon({
       fill={fill}
       width={size}
       height={size}
-      viewBox="0 0 24 24"
+      viewBox="0 0 512 512"
     >
-      {/* Add SVG paths here */}
+      <path fillRule="evenodd" d="M256,48,496,464H16Z" />
     </svg>
   );
 }

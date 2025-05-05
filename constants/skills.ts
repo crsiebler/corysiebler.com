@@ -1,7 +1,7 @@
 export const skills = {
   JavaScript: {
     description:
-      'JavaScript front-end development focusing on Next.js and React.js with hooks.',
+      'JavaScript front-end development focusing on 💕 Next.js and React.js with hooks.',
     icons: ['JavaScriptIcon', 'ReactIcon', 'NextJsIcon'],
   },
   'HTML5 & CSS3': {
@@ -10,8 +10,8 @@ export const skills = {
   },
   Styling: {
     description:
-      'Work with the latest front-end web frameworks and libraries such as Material-UI, Chakra-UI, and Tailwind CSS.',
-    icons: ['MaterialUiIcon', 'ChakraUiIcon', 'TailwindIcon'],
+      'Work with the latest front-end web frameworks and libraries such as Material-UI, Chakra-UI, and ✌🏻 Tailwind CSS.',
+    icons: ['TailwindIcon', 'ChakraUiIcon', 'MaterialUiIcon'],
   },
   Python: {
     description:
@@ -21,12 +21,12 @@ export const skills = {
   Java: {
     description:
       'J2EE Applications with Maven, modular design using OSGi, microservices with Spring and Hibernate.',
-    icons: ['JavaIcon', 'SpringIcon', 'HibernateIcon'],
+    icons: ['JavaIcon', 'SpringIcon'],
   },
   PHP: {
     description:
-      'PHP web development utilizing the Symfony framework. 💕 Doctrine, Twig, & Api Platform!',
-    icons: ['PhpIcon', 'SymfonyIcon', 'DoctrineIcon', 'TwigIcon'],
+      'PHP web development utilizing the Symfony framework. Doctrine, Twig, & Api Platform!',
+    icons: ['PhpIcon', 'SymfonyIcon', 'ComposerIcon'],
   },
   Documentation: {
     description:
@@ -51,7 +51,7 @@ export const skills = {
   Databases: {
     description:
       'Management, administration, and architecture for OLTP and OLAP databases. Familiar with Oracle, PostgreSQL, and MySQL DBMS.',
-    icons: ['OracleIcon', 'PostgreSqlIcon', 'MySqlIcon'],
+    icons: ['PostgreSqlIcon', 'MySqlIcon', 'OracleIcon'],
   },
   Tools: {
     description:
@@ -66,7 +66,7 @@ export const skills = {
   IDEs: {
     description:
       "A developer's best friend. Visual Studio Code 💯 because it's free but JetBrains makes great products as well.",
-    icons: ['VsCodeIcon', 'JetBrainsIcon'],
+    icons: ['VisualStudioCodeIcon', 'JetBrainsIcon'],
   },
   'Cloud Computing': {
     description:
@@ -76,6 +76,6 @@ export const skills = {
   Misc: {
     description:
       'The latest APIs with GraphQL. Bundle up applications with Webpack, Babel, and Node.js.',
-    icons: ['GraphqlIcon', 'WebpackIcon', 'BabelIcon', 'NodeJsIcon'],
+    icons: ['GraphqlIcon', 'WebpackIcon', 'NodeJsIcon', 'BabelIcon'],
   },
 };
