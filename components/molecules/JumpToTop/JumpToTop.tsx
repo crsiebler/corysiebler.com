@@ -27,11 +27,11 @@ export function JumpToTop() {
   return (
     isVisible && (
       <button
+        className="bg-primary fixed right-5 bottom-5 z-40 rounded-full p-2"
         data-testid="jump-to-top"
         onClick={scrollToTop}
-        className="bg-tint-lightest fixed right-5 bottom-5 z-40 rounded-full p-2 shadow-lg"
       >
-        <ChevronUpIcon />
+        <ChevronUpIcon className="text-white" />
       </button>
     )
   );

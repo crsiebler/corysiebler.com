@@ -1,21 +1,12 @@
-import { Text } from '@/atoms/Text';
+import { HomeHeroSection } from './HomeHeroSection';
+import { HomeSkillsSection } from './HomeSkillsSection';
 
 export function HomeTemplate() {
   return (
-    <main className="container bg-white p-4">
-      <div className="flex flex-col gap-1">
-        <Text variant="h1" weight="light">
-          Cory Siebler
-        </Text>
-        <Text
-          className="text-tint-darker"
-          component="h2"
-          variant="h4"
-          weight="light"
-        >
-          Senior Software Engineer
-        </Text>
-      </div>
+    <main className="bg-white py-4">
+      <HomeHeroSection />
+      <hr className="border-tint-light my-4 border-t" />
+      <HomeSkillsSection />
     </main>
   );
 }
