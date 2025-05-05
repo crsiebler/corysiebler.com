@@ -3,14 +3,46 @@ import {
   Auth0Icon,
   AwsIcon,
   BabelIcon,
+  BitbucketIcon,
+  ChakraUiIcon,
+  ComposerIcon,
   Css3Icon,
+  DjangoIcon,
+  DockerIcon,
+  FlaskIcon,
+  GitHubIcon,
+  GitIcon,
+  GraphqlIcon,
+  HerokuIcon,
   Html5Icon,
+  JavaIcon,
   JavaScriptIcon,
+  JenkinsIcon,
+  JetBrainsIcon,
+  JiraIcon,
+  KubernetesIcon,
+  MaterialUiIcon,
+  MySqlIcon,
   NextJsIcon,
+  NginxIcon,
+  NodeJsIcon,
+  OracleIcon,
+  PhpIcon,
+  PostgreSqlIcon,
   PythonIcon,
+  RabbitMqIcon,
+  RaspberryPiIcon,
   ReactIcon,
+  RedisIcon,
   SassIcon,
+  SpringIcon,
+  StorybookIcon,
+  SwaggerIcon,
+  SymfonyIcon,
   TailwindIcon,
+  VercelIcon,
+  VisualStudioCodeIcon,
+  WebpackIcon,
 } from '@/atoms/icons';
 import { Text } from '@/atoms/Text';
 
@@ -25,14 +57,46 @@ const Icons = {
   Auth0Icon,
   AwsIcon,
   BabelIcon,
+  BitbucketIcon,
+  ChakraUiIcon,
+  ComposerIcon,
   Css3Icon,
+  DjangoIcon,
+  DockerIcon,
+  FlaskIcon,
+  GitHubIcon,
+  GitIcon,
+  GraphqlIcon,
+  HerokuIcon,
   Html5Icon,
+  JavaIcon,
   JavaScriptIcon,
+  JenkinsIcon,
+  JetBrainsIcon,
+  JiraIcon,
+  KubernetesIcon,
+  MaterialUiIcon,
+  MySqlIcon,
   NextJsIcon,
+  NginxIcon,
+  NodeJsIcon,
+  OracleIcon,
+  PhpIcon,
+  PostgreSqlIcon,
   PythonIcon,
+  RabbitMqIcon,
+  RaspberryPiIcon,
   ReactIcon,
+  RedisIcon,
   SassIcon,
+  SpringIcon,
+  StorybookIcon,
+  SwaggerIcon,
+  SymfonyIcon,
   TailwindIcon,
+  VercelIcon,
+  VisualStudioCodeIcon,
+  WebpackIcon,
 };
 
 export function SkillCard({ skillName, description, icons }: SkillCardProps) {
@@ -41,7 +105,11 @@ export function SkillCard({ skillName, description, icons }: SkillCardProps) {
       <div className="flex gap-2">
         {icons.map((iconName) => {
           const IconComponent = Icons[iconName as keyof typeof Icons];
-          return IconComponent ? <IconComponent key={iconName} /> : null;
+          if (!IconComponent) {
+            console.error(`Icon "${iconName}" does not exist in Icons.`);
+            return null;
+          }
+          return <IconComponent key={iconName} />;
         })}
       </div>
       <Text component="h4" variant="h6">

@@ -27,7 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 The application uses Vitest to run unit tests. Run them with the following command:
 
 ```bash
-npm test
+bun test
 ```
 
 ## Learn More
