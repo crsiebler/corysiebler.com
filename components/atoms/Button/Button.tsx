@@ -43,7 +43,7 @@ export function Button({
 
   const variantStyles = {
     text: 'bg-transparent hover:bg-tint-light',
-    outlined: 'border-2 backdrop-blur bg-transparent hover:backdrop-blur-xl',
+    outlined: 'border backdrop-blur bg-transparent hover:backdrop-blur-xl',
     contained: 'text-white',
   };
 
