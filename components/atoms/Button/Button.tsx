@@ -117,6 +117,7 @@ export function Button({
         disabled && 'cursor-not-allowed opacity-50',
         className,
       )}
+      disabled={disabled}
       onClick={onClick}
       {...props}
     >
