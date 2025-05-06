@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import { Text } from './Text';
 
-describe('Text', () => {
+describe('Text Component', () => {
   it('renders with default props', () => {
     const { container } = render(<Text>Default Text</Text>);
     const textElement = container.firstChild as HTMLElement;
