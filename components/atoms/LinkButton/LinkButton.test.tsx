@@ -29,6 +29,28 @@ describe('LinkButton Component', () => {
     expect(linkElement?.getAttribute('target')).toBe('_blank');
   });
 
+  it('applies the className to the Link element', () => {
+    const { container } = render(
+      <LinkButton href="/test" className="link-class" variant="contained">
+        Link Button
+      </LinkButton>,
+    );
+    const linkElement = container.querySelector('a');
+
+    expect(linkElement?.classList.contains('link-class')).toBe(true);
+  });
+
+  it('applies the buttonClasses to the Button element', () => {
+    const { container } = render(
+      <LinkButton href="/test" buttonClasses="button-class" variant="contained">
+        Button Classes
+      </LinkButton>,
+    );
+    const buttonElement = container.querySelector('button');
+
+    expect(buttonElement?.classList.contains('button-class')).toBe(true);
+  });
+
   it('passes props to the Button component', () => {
     const { container } = render(
       <LinkButton href="/test" color="primary" variant="contained">
@@ -38,16 +60,5 @@ describe('LinkButton Component', () => {
     const buttonElement = container.querySelector('button');
 
     expect(buttonElement?.classList.contains('bg-primary')).toBe(true);
-  });
-
-  it('renders with additional className', () => {
-    const { container } = render(
-      <LinkButton href="/test" className="custom-class" variant="contained">
-        Custom Button
-      </LinkButton>,
-    );
-    const linkElement = container.querySelector('a');
-
-    expect(linkElement?.classList.contains('custom-class')).toBe(true);
   });
 });

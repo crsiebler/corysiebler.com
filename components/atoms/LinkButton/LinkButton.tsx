@@ -4,13 +4,15 @@ import { Button } from '@/atoms/Button';
 import type { ButtonProps } from '@/atoms/Button';
 
 interface LinkButtonProps extends ButtonProps {
-  href: string;
+  buttonClasses?: string;
   children: ReactNode;
   className?: string;
+  href: string;
   target?: '_blank' | '_self' | '_parent' | '_top';
 }
 
 export function LinkButton({
+  buttonClasses,
   children,
   className,
   href,
@@ -19,7 +21,9 @@ export function LinkButton({
 }: LinkButtonProps) {
   return (
     <Link className={className} href={href} target={target} passHref>
-      <Button {...props}>{children}</Button>
+      <Button className={buttonClasses} {...props}>
+        {children}
+      </Button>
     </Link>
   );
 }

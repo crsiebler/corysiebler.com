@@ -2,7 +2,7 @@
 
 import { CldImage } from 'next-cloudinary';
 
-interface AvatarImageProps {
+interface HeadshotImageProps {
   src?: string;
   alt?: string;
   width?: number;
@@ -10,13 +10,13 @@ interface AvatarImageProps {
   className?: string;
 }
 
-export function AvatarImage({
-  src = 'cory-siebler/avatar.webp',
-  alt = 'Avatar',
-  width = 144,
-  height = 144,
-  className = 'rounded-full',
-}: AvatarImageProps) {
+export function HeadshotImage({
+  src = 'cory-siebler/portrait.webp',
+  alt = 'Headshot',
+  width = 480,
+  height = 480,
+  className = 'rounded-xl',
+}: HeadshotImageProps) {
   return (
     <div className="relative">
       <CldImage
@@ -24,8 +24,9 @@ export function AvatarImage({
         alt={alt}
         width={width}
         height={height}
+        crop="fill"
+        gravity="face"
         className={`object-cover ${className}`}
-        replaceBackground="white"
       />
     </div>
   );
