@@ -33,7 +33,7 @@ export function getMetadata({
       site_name: 'Cory Siebler',
       images: [
         {
-          url: `${baseUrl}/images/portrait.jpg`,
+          url: `https://res.cloudinary.com/di8xu0omv/image/upload/cory-siebler/portrait.jpeg`,
           width: 800,
           height: 800,
           alt: 'Cory Siebler Portrait',

@@ -14,16 +14,18 @@ export function ListItemGroup({ href, primary, icon }: ListItemGroupProps) {
   const { toggleDrawer } = useDisplay((state) => state);
 
   return (
-    <LinkButton
-      className="flex items-center space-x-6"
-      href={href}
-      onClick={toggleDrawer}
-      variant="text"
-    >
-      {icon}
-      <Text component="span" className="font-medium">
-        {primary}
-      </Text>
-    </LinkButton>
+    <li className="w-full">
+      <LinkButton
+        buttonClasses="flex gap-2"
+        href={href}
+        onClick={toggleDrawer}
+        variant="text"
+      >
+        {icon}
+        <Text component="span" className="font-medium">
+          {primary}
+        </Text>
+      </LinkButton>
+    </li>
   );
 }
