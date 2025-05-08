@@ -2,20 +2,24 @@ import Link from 'next/link';
 import { Button } from '@/atoms/Button';
 import { Text } from '@/atoms/Text';
 import { linkItems } from '@/constants/navigation';
+import { CopyrightYear } from './CopyrightYear';
 
 export function Footer() {
   return (
     <footer>
       <div className="bg-shade-dark px-6 py-1 text-white">
         <div className="container mx-auto flex w-full justify-between px-4">
-          <Text className="text-xxs my-auto hidden md:flex" variant="caption">
-            {'Copyright © '}
-            <Link color="inherit" href="/">
-              Cory Siebler
-            </Link>{' '}
-            {new Date().getFullYear()}
-            {'. All rights reserved.'}
-          </Text>
+          <Link color="inherit" href="/">
+            <Text
+              component="span"
+              className="my-auto hidden md:flex"
+              variant="caption"
+            >
+              {'Copyright © Cory Siebler '}
+              <CopyrightYear />
+              {'. All rights reserved.'}
+            </Text>
+          </Link>
           <div className="mx-auto flex gap-2 md:mx-0">
             {linkItems.map((item, index) => (
               <Button
