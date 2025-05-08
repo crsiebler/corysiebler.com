@@ -12,7 +12,7 @@ describe('Footer Component', () => {
 
   it('renders the copyright text', () => {
     const { container } = render(<Footer />);
-    const textElement = container.querySelector('p');
+    const textElement = container.querySelector('span');
 
     expect(textElement?.textContent).toContain('©');
   });
