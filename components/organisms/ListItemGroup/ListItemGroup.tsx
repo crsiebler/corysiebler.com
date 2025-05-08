@@ -16,7 +16,7 @@ export function ListItemGroup({ href, primary, icon }: ListItemGroupProps) {
   return (
     <li className="w-full">
       <LinkButton
-        buttonClasses="flex gap-2"
+        className="flex gap-2"
         href={href}
         onClick={toggleDrawer}
         variant="text"
