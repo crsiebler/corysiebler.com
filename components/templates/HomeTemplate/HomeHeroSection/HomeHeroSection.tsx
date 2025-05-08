@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { InfoIcon } from '@/atoms/icons';
+import { HeadshotImage } from '@/atoms/Images/HeadshotImage';
 import { LinkButton } from '@/atoms/LinkButton';
 import { Text } from '@/atoms/Text';
 
@@ -30,26 +31,41 @@ export function HomeHeroSection() {
         </Link>{' '}
         account.
       </Text>
-      <div className="flex gap-4">
+      <div className="flex gap-2">
         <LinkButton
-          className="h-full uppercase"
+          className="h-full"
           color="primary"
           href="/resume"
           variant="contained"
         >
           <span className="flex flex-row gap-2">
-            Resume
-            <InfoIcon />
+            <Text
+              component="span"
+              className="my-auto uppercase"
+              variant="body2"
+            >
+              Resume
+            </Text>
+            <InfoIcon size={20} />
           </span>
         </LinkButton>
         <LinkButton
-          className="h-full uppercase"
+          className="h-full"
           color="primary"
           href="/portfolio"
           variant="outlined"
         >
-          Portfolio
+          <Text
+            component="span"
+            className="mx-auto flex flex-row uppercase"
+            variant="body2"
+          >
+            Portfolio
+          </Text>
         </LinkButton>
+      </div>
+      <div className="flex w-full items-center justify-center">
+        <HeadshotImage />
       </div>
     </section>
   );

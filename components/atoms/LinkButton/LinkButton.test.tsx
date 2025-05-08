@@ -29,20 +29,9 @@ describe('LinkButton Component', () => {
     expect(linkElement?.getAttribute('target')).toBe('_blank');
   });
 
-  it('applies the className to the Link element', () => {
+  it('applies the classes to the Button element', () => {
     const { container } = render(
-      <LinkButton href="/test" className="link-class" variant="contained">
-        Link Button
-      </LinkButton>,
-    );
-    const linkElement = container.querySelector('a');
-
-    expect(linkElement?.classList.contains('link-class')).toBe(true);
-  });
-
-  it('applies the buttonClasses to the Button element', () => {
-    const { container } = render(
-      <LinkButton href="/test" buttonClasses="button-class" variant="contained">
+      <LinkButton href="/test" className="button-class" variant="contained">
         Button Classes
       </LinkButton>,
     );
