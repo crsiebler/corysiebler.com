@@ -1,5 +1,6 @@
 'use client';
 
+import clsx from 'clsx';
 import { CldImage } from 'next-cloudinary';
 
 interface HeadshotImageProps {
@@ -15,7 +16,7 @@ export function HeadshotImage({
   alt = 'Headshot',
   width = 480,
   height = 480,
-  className = 'rounded-xl',
+  className = 'rounded-2xl',
 }: HeadshotImageProps) {
   return (
     <div className="relative">
@@ -26,7 +27,7 @@ export function HeadshotImage({
         height={height}
         crop="fill"
         gravity="face"
-        className={`object-cover ${className}`}
+        className={clsx('object-cover', className)}
       />
     </div>
   );

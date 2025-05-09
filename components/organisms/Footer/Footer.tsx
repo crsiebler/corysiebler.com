@@ -7,7 +7,7 @@ import { CopyrightYear } from './CopyrightYear';
 export function Footer() {
   return (
     <footer className="bg-shade-dark text-white">
-      <div className="mx-auto max-w-5xl px-6 py-1">
+      <div className="mx-auto max-w-7xl px-6 py-1">
         <div className="container mx-auto flex w-full justify-between px-4">
           <Link color="inherit" href="/">
             <Text
