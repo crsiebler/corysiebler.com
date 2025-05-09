@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 import { AvatarImage } from '@/atoms/Images/AvatarImage';
+import { LinkButton } from '@/atoms/LinkButton';
 import { Text } from '@/atoms/Text';
 import { linkItems } from 'constants/navigation';
 
@@ -24,17 +24,19 @@ export function AvatarSection() {
       >
         Hi! My name is Cory Siebler. Welcome to my personal website!
       </Text>
-      <div className="flex w-full max-w-xs flex-wrap justify-center space-y-2">
+      <div className="flex w-full max-w-xs flex-wrap justify-center gap-x-6 gap-y-2">
         {linkItems.map((item, index) => (
-          <Link
+          <LinkButton
             aria-label={item.ariaLabel}
-            className="flex w-1/3 justify-center rounded-full p-2 transition hover:bg-gray-200"
+            className="hover:bg-monochromatic-light flex justify-center rounded-full p-2 transition"
+            color="white"
             href={item.href}
             key={index}
+            rounded="full"
             target={item.target ? item.target : '_self'}
           >
             {item.icon()}
-          </Link>
+          </LinkButton>
         ))}
       </div>
     </section>

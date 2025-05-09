@@ -4,11 +4,8 @@
   --color-analogous-1: #3f8bb5;
   --color-analogous-2: #3f50b5;
   --color-analogous-3: #593fb5;
-  --color-black: #000000;
-  --color-blue: #2196f3;
   --color-complimentary: #aaf400;
   --color-error: #f44336;
-  --color-green: #4caf50;
   --color-info: #2196f3;
   --color-inherit: inherit;
   --color-monochromatic-darkest: #1a214c;
@@ -18,8 +15,8 @@
   --color-monochromatic-lighter: #8e98d7;
   --color-monochromatic-lightest: #b3bae5;
   --color-primary: #3f50b5;
-  --color-red: #f44336;
   --color-secondary: #eeeeee;
+  --color-secondary-light: #f5f5f5;
   --color-shade-darkest: #030303;
   --color-shade-darker: #161616;
   --color-shade-dark: #2a2a2a;
@@ -46,7 +43,6 @@
   --color-triadic-2: #50b53f;
   --color-triadic-3: #b53f50;
   --color-warning: #ff9800;
-  --color-white: #ffffff;
   --font-size-xxs: 0.5rem;
   --text-shadow-lg: 0 8px 16px var(--tw-shadow-color);
   --text-shadow-sm: 0 1px 2px var(--tw-shadow-color);

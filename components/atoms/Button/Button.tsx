@@ -3,19 +3,23 @@ import clsx from 'clsx';
 
 type Variant = 'text' | 'outlined' | 'contained';
 type Color =
+  | 'black'
+  | 'complimentary'
+  | 'error'
+  | 'info'
+  | 'neutral'
   | 'primary'
   | 'secondary'
-  | 'complimentary'
-  | 'info'
   | 'success'
-  | 'error'
-  | 'warning'
-  | 'neutral'
-  | 'white'
-  | 'black'
+  | 'tint'
+  | 'tint-dark'
+  | 'tint-darker'
+  | 'tint-darkest'
   | 'tint-light'
   | 'tint-lighter'
-  | 'tint-lightest';
+  | 'tint-lightest'
+  | 'warning'
+  | 'white';
 type Rounded = 'none' | 'sm' | 'md' | 'lg' | 'full';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -24,96 +28,104 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   color?: Color;
   disabled?: boolean;
   rounded?: Rounded;
-  transparent?: boolean;
-  variant: Variant;
+  variant?: Variant;
 }
 
 export function Button({
   children,
   className,
-  color = 'neutral',
+  color = 'primary',
   disabled,
   onClick,
   rounded = 'md',
-  transparent,
-  variant,
+  variant = 'text',
   ...props
 }: ButtonProps) {
-  const baseStyles = 'px-4 py-2 transition-colors duration-200 cursor-pointer';
-
-  const variantStyles = {
-    text: 'bg-transparent hover:bg-tint-light',
-    outlined: 'border backdrop-blur bg-transparent hover:backdrop-blur-xl',
-    contained: 'text-white',
-  };
-
-  const colorStyles = {
-    primary: 'text-primary border-primary',
-    secondary: 'text-secondary border-secondary',
-    complimentary: 'text-complimentary border-complimentary',
-    info: 'text-info border-info',
-    success: 'text-success border-success',
-    error: 'text-error border-error',
-    warning: 'text-warning border-warning',
-    neutral: 'text-neutral border-neutral',
-    white: 'text-white border-white',
-    black: 'text-black border-black',
-    'tint-light': 'text-tint border-tint',
-    'tint-lighter': 'text-tint-lighter border-tint-lighter',
-    'tint-lightest': 'text-tint-lightest border-tint-lightest',
-  };
-
-  const colorFillStyles = {
-    primary: 'bg-primary',
-    secondary: 'bg-secondary',
-    complimentary: 'bg-complimentary',
-    info: 'bg-info',
-    success: 'bg-success',
-    error: 'bg-error',
-    warning: 'bg-warning',
-    neutral: 'bg-neutral',
-    white: 'bg-white',
-    black: 'bg-black',
-    'tint-light': 'bg-tint',
-    'tint-lighter': 'bg-tint-lighter',
-    'tint-lightest': 'bg-tint-lightest',
-  };
-
-  const hoverColorStyles = {
-    primary: 'hover:bg-monochromatic-light hover:border-monochromatic-light',
-    secondary: 'hover:bg-analogous-1 hover:border-analogous-1',
-    complimentary:
-      'hover:bg-split-complementary-1 hover:border-split-complementary-1',
-    info: '',
-    success: '',
-    error: '',
-    warning: '',
-    neutral: 'hover:bg-tint hover:border-tint',
-    white: 'hover:bg-tint-lightest hover:border-tint-lightest',
-    black: 'hover:bg-shade-darkest hover:border-shade-darkest',
-    'tint-light': 'hover:bg-tint hover:border-tint',
-    'tint-lighter': 'hover:bg-tint-light hover:border-tint-light',
-    'tint-lightest': 'hover:bg-tint-lighter hover:border-tint-lighter',
-  };
-
-  const roundedStyles = {
-    none: 'rounded-none',
-    sm: 'rounded-sm',
-    md: 'rounded-md',
-    lg: 'rounded-lg',
-    full: 'rounded-full',
-  };
-
   return (
     <button
       className={clsx(
-        baseStyles,
-        variantStyles[variant],
-        colorStyles[color],
-        variant === 'contained' && colorFillStyles[color],
-        variant !== 'outlined' && hoverColorStyles[color],
-        variant === 'outlined' && !transparent && 'hover:bg-tint-lightest',
-        roundedStyles[rounded],
+        'cursor-pointer p-2 transition-colors duration-200',
+        {
+          text: 'hover:backdrop-brightness-95',
+          outlined:
+            'border bg-transparent backdrop-blur hover:brightness-95 hover:backdrop-blur-2xl',
+          contained: 'text-white',
+        }[variant],
+        // Color Styles
+        {
+          tint: 'border-tint text-tint',
+          'tint-dark': 'border-tint-dark text-tint-dark',
+          'tint-darker': 'border-tint-darker text-tint-darker',
+          'tint-darkest': 'border-tint-darkest text-tint-darkest',
+          'tint-light': 'border-tint-light text-tint-light',
+          'tint-lighter': 'border-tint-lighter text-tint-lighter',
+          'tint-lightest': 'border-tint-lightest text-tint-lightest',
+          black: 'border-black text-black',
+          complimentary: 'border-complimentary text-complimentary',
+          error: 'border-error text-error',
+          info: 'border-info text-info',
+          neutral: 'border-neutral text-neutral',
+          primary: 'border-primary text-primary',
+          secondary: 'border-secondary text-secondary',
+          success: 'border-success text-success',
+          warning: 'border-warning text-warning',
+          white: 'border-white text-white',
+        }[color],
+        // Color Fill Styles
+        variant === 'contained' &&
+          {
+            tint: 'bg-tint',
+            'tint-dark': 'bg-tint-dark',
+            'tint-darker': 'bg-tint-darker',
+            'tint-darkest': 'bg-tint-darkest',
+            'tint-light': 'bg-tint-light',
+            'tint-lighter': 'bg-tint-lighter',
+            'tint-lightest': 'bg-tint-lightest',
+            black: 'bg-black',
+            complimentary: 'bg-complimentary',
+            error: 'bg-error',
+            info: 'bg-info',
+            neutral: 'bg-neutral',
+            primary: 'bg-primary',
+            secondary: 'bg-secondary',
+            success: 'bg-success',
+            warning: 'bg-warning',
+            white: 'bg-white',
+          }[color],
+        // Contained Hover Styles
+        variant === 'contained' &&
+          {
+            tint: 'hover:border-tint/80 hover:bg-tint/80',
+            'tint-dark': 'hover:border-tint-dark/80 hover:bg-tint-dark/80',
+            'tint-darker':
+              'hover:border-tint-darker/80 hover:bg-tint-darker/80',
+            'tint-darkest':
+              'hover:border-tint-darkest/80 hover:bg-tint-darkest/80',
+            'tint-light': 'hover:border-tint-light/80 hover:bg-tint-light/80',
+            'tint-lighter':
+              'hover:border-tint-lighter/80 hover:bg-tint-lighter/80',
+            'tint-lightest':
+              'hover:border-tint-lightest/80 hover:bg-tint-lightest/80',
+            black: 'hover:border-shade-darkest/80 hover:bg-shade-darkest/80',
+            complimentary:
+              'hover:border-complimentary/80 hover:bg-complimentary/80',
+            error: 'hover:border-error/80 hover:bg-error/80',
+            info: 'hover:border-info/80 hover:bg-info/80',
+            neutral: 'hover:border-neutral/80 hover:bg-neutral/80',
+            primary: 'hover:border-primary/80 hover:bg-primary/80',
+            secondary: 'hover:border-secondary/80 hover:bg-secondary/80',
+            success: 'hover:border-success/80 hover:bg-success/80',
+            warning: 'hover:border-warning/80 hover:bg-warning/80',
+            white: 'hover:border-tint-lightest/80 hover:bg-tint-lightest/80',
+          }[color],
+        // Rounded Styles
+        {
+          none: 'rounded-none',
+          sm: 'rounded-sm',
+          md: 'rounded-md',
+          lg: 'rounded-lg',
+          full: 'rounded-full',
+        }[rounded],
         disabled && 'cursor-not-allowed opacity-50',
         className,
       )}

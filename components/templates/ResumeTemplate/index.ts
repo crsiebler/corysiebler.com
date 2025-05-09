@@ -1,0 +1,1 @@
+export { ResumeTemplate } from './ResumeTemplate';

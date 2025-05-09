@@ -14,9 +14,10 @@ export function ListItemGroup({ href, primary, icon }: ListItemGroupProps) {
   const { toggleDrawer } = useDisplay((state) => state);
 
   return (
-    <li className="w-full">
+    <li className="hover:bg-monochromatic-light">
       <LinkButton
-        className="flex gap-2"
+        color="white"
+        className="flex w-full gap-2"
         href={href}
         onClick={toggleDrawer}
         variant="text"

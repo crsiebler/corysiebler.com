@@ -5,7 +5,7 @@ export function NavigationSection() {
   return (
     <nav className="w-full">
       <hr className="border-shade-light my-4" />
-      <ul className="flex flex-col gap-2 px-2">
+      <ul className="flex flex-col gap-2">
         <ListItemGroup href="/" primary="Home" icon={<HomeIcon />} />
         <ListItemGroup href="resume" primary="Resume" icon={<InfoIcon />} />
         <ListItemGroup
