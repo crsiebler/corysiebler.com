@@ -22,12 +22,14 @@ export default function RootLayout({
         <JsonLd schema={schema} />
         <ShortcutIcon />
       </head>
-      <body className={clsx('bg-shade-dark', roboto.className)}>
-        <ApplicationBar title={metadata.title} />
+      <body className={clsx('overscroll-none', roboto.className)}>
         <div id="anchor" />
-        {children}
+        <ApplicationBar title={metadata.title} />
+        <div className="flex min-h-screen flex-col justify-between lg:ml-64">
+          {children}
+          <Footer />
+        </div>
         <JumpToTop />
-        <Footer />
       </body>
     </html>
   );

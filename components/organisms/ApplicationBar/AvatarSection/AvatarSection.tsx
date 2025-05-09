@@ -6,7 +6,10 @@ import { linkItems } from 'constants/navigation';
 
 export function AvatarSection() {
   return (
-    <section className="flex flex-col items-center space-y-6 pt-4" id="avatar">
+    <section
+      className="flex flex-col items-center space-y-6 px-4 pt-4"
+      id="avatar"
+    >
       <Text className="text-center" variant="h6">
         Cory Siebler
       </Text>

@@ -14,7 +14,7 @@ export function NavigationBar({ children, title }: NavigationBarProps) {
   const { drawer, toggleDrawer } = useDisplay((state) => state);
 
   return (
-    <div className="px flex w-full flex-col py-2">
+    <div className="px flex w-full flex-col py-2 lg:hidden">
       <div className="gap flex">
         <Button
           aria-label="menu"

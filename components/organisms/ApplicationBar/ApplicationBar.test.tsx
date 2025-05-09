@@ -1,6 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeAll } from 'vitest';
 import { ApplicationBar } from './ApplicationBar';
+
+beforeAll(() => {
+  process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME = 'mock-cloud-name';
+});
 
 describe('ApplicationBar Component', () => {
   it('renders the application bar', () => {
