@@ -14,7 +14,10 @@ export function ApplicationBar({ title }: ApplicationBarProps) {
         <AvatarSection />
         <NavigationSection />
       </NavigationBar>
-      <NavigationPane />
+      <NavigationPane>
+        <AvatarSection />
+        <NavigationSection />
+      </NavigationPane>
     </header>
   );
 }
