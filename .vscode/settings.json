@@ -1,3 +1,23 @@
 {
-  "cSpell.words": ["corysiebler", "Headshot", "Microcontrollers"]
+  "cSpell.words": ["corysiebler", "Headshot", "Microcontrollers"],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#606ec7",
+    "activityBar.background": "#606ec7",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#762a34",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#606ec7",
+    "statusBar.background": "#3f50b5",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#606ec7",
+    "statusBarItem.remoteBackground": "#3f50b5",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#3f50b5",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#3f50b599",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#3f50b5"
 }
