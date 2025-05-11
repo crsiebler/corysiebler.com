@@ -20,7 +20,7 @@ describe('NavigationPane', () => {
     expect(pane.classList.contains('fixed')).toBe(true);
     expect(pane.classList.contains('top-0')).toBe(true);
     expect(pane.classList.contains('h-screen')).toBe(true);
-    expect(pane.classList.contains('w-64')).toBe(true);
+    expect(pane.classList.contains('w-70')).toBe(true);
     expect(pane.classList.contains('flex-col')).toBe(true);
     expect(pane.classList.contains('lg:flex')).toBe(true);
     expect(pane.classList.contains('hidden')).toBe(true);

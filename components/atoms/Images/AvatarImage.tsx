@@ -11,7 +11,7 @@ interface AvatarImageProps {
 }
 
 export function AvatarImage({
-  src = 'cory-siebler/avatar.webp',
+  src = 'cory-siebler/avatar',
   alt = 'Avatar',
   width = 144,
   height = 144,
@@ -24,6 +24,7 @@ export function AvatarImage({
         alt={alt}
         width={width}
         height={height}
+        format="webp"
         className={`object-cover ${className}`}
         replaceBackground="white"
       />

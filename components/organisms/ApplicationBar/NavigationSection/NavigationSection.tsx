@@ -4,8 +4,8 @@ import { ListItemGroup } from '@/organisms/ListItemGroup'; // Adjust the path as
 export function NavigationSection() {
   return (
     <nav className="w-full">
-      <hr className="border-shade-light my-4" />
-      <ul className="flex flex-col gap-2">
+      <hr className="border- my-4" />
+      <ul className="flex flex-col gap-4">
         <ListItemGroup href="/" primary="Home" icon={<HomeIcon />} />
         <ListItemGroup href="resume" primary="Resume" icon={<InfoIcon />} />
         <ListItemGroup

@@ -1,9 +1,8 @@
 'use client';
 
-import clsx from 'clsx';
 import { CldImage } from 'next-cloudinary';
 
-interface HeadshotImageProps {
+interface GhostArmorImageProps {
   src?: string;
   alt?: string;
   width?: number;
@@ -11,13 +10,13 @@ interface HeadshotImageProps {
   className?: string;
 }
 
-export function HeadshotImage({
-  src = 'cory-siebler/portrait',
-  alt = 'Headshot',
-  width = 480,
-  height = 480,
-  className = 'rounded-2xl',
-}: HeadshotImageProps) {
+export function GhostArmorImage({
+  src = 'cory-siebler/ghost-armor-logo',
+  alt = 'Ghost Armor Logo',
+  width = 300,
+  height = 84,
+  className = 'object-contain',
+}: GhostArmorImageProps) {
   return (
     <div className="relative">
       <CldImage
@@ -26,9 +25,8 @@ export function HeadshotImage({
         width={width}
         height={height}
         crop="fill"
-        gravity="face"
         format="webp"
-        className={clsx('object-cover', className)}
+        className={className}
       />
     </div>
   );
