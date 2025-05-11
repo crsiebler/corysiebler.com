@@ -1,0 +1,1 @@
+export { ResumeContactSection } from './ResumeContactSection';

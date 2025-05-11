@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={clsx('overscroll-none', roboto.className)}>
         <div id="anchor" />
         <ApplicationBar title={metadata.title} />
-        <div className="flex min-h-screen flex-col justify-between lg:ml-64">
+        <div className="flex min-h-screen flex-col justify-between lg:ml-70">
           {children}
           <Footer />
         </div>

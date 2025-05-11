@@ -24,7 +24,7 @@ export function AvatarSection() {
       >
         Hi! My name is Cory Siebler. Welcome to my personal website!
       </Text>
-      <div className="flex w-full max-w-xs flex-wrap justify-center gap-x-6 gap-y-2">
+      <div className="flex w-full max-w-xs flex-wrap justify-center gap-x-8 gap-y-2">
         {linkItems.map((item, index) => (
           <LinkButton
             aria-label={item.ariaLabel}

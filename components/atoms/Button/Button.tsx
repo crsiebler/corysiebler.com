@@ -44,7 +44,8 @@ export function Button({
   return (
     <button
       className={clsx(
-        'cursor-pointer p-2 transition-colors duration-200',
+        'cursor-pointer transition-colors duration-200',
+        !className?.match(/\b(p-|px-|py-)/) && 'px-4 py-1',
         {
           text: 'hover:backdrop-brightness-95',
           outlined:

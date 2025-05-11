@@ -1,9 +1,8 @@
 'use client';
 
-import clsx from 'clsx';
 import { CldImage } from 'next-cloudinary';
 
-interface HeadshotImageProps {
+interface NextivaImageProps {
   src?: string;
   alt?: string;
   width?: number;
@@ -11,13 +10,13 @@ interface HeadshotImageProps {
   className?: string;
 }
 
-export function HeadshotImage({
-  src = 'cory-siebler/portrait',
-  alt = 'Headshot',
-  width = 480,
-  height = 480,
-  className = 'rounded-2xl',
-}: HeadshotImageProps) {
+export function NextivaImage({
+  src = 'cory-siebler/nextiva-logo',
+  alt = 'Angel Studios Logo',
+  width = 1318,
+  height = 659,
+  className = 'object-contain',
+}: NextivaImageProps) {
   return (
     <div className="relative">
       <CldImage
@@ -26,9 +25,8 @@ export function HeadshotImage({
         width={width}
         height={height}
         crop="fill"
-        gravity="face"
         format="webp"
-        className={clsx('object-cover', className)}
+        className={className}
       />
     </div>
   );

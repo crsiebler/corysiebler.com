@@ -1,9 +1,8 @@
 'use client';
 
-import clsx from 'clsx';
 import { CldImage } from 'next-cloudinary';
 
-interface HeadshotImageProps {
+interface LockheedMartinImageProps {
   src?: string;
   alt?: string;
   width?: number;
@@ -11,13 +10,13 @@ interface HeadshotImageProps {
   className?: string;
 }
 
-export function HeadshotImage({
-  src = 'cory-siebler/portrait',
-  alt = 'Headshot',
-  width = 480,
-  height = 480,
-  className = 'rounded-2xl',
-}: HeadshotImageProps) {
+export function LockheedMartinImage({
+  src = 'cory-siebler/lockheed-martin-logo',
+  alt = 'Lockheed Martin Logo',
+  width = 2131,
+  height = 322,
+  className = 'object-contain',
+}: LockheedMartinImageProps) {
   return (
     <div className="relative">
       <CldImage
@@ -26,9 +25,8 @@ export function HeadshotImage({
         width={width}
         height={height}
         crop="fill"
-        gravity="face"
         format="webp"
-        className={clsx('object-cover', className)}
+        className={className}
       />
     </div>
   );

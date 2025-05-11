@@ -17,7 +17,7 @@ export function ListItemGroup({ href, primary, icon }: ListItemGroupProps) {
     <li className="hover:bg-monochromatic-light">
       <LinkButton
         color="white"
-        className="flex w-full gap-2"
+        className="flex w-full gap-8"
         href={href}
         onClick={toggleDrawer}
         variant="text"
