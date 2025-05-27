@@ -4,14 +4,16 @@ import { Text } from '@/atoms/Text';
 
 export function ResumeContactSection() {
   return (
-    <section className="flex flex-col gap-1 p-4">
-      <Text className="text-primary" variant="h2" weight="light">
-        Cory Siebler
-      </Text>
-      <Text component="h2" className="text-shade font-light" variant="h5">
-        Senior Software Engineer
-      </Text>
-      <div className="flex flex-col">
+    <section className="flex flex-col gap-1 p-6 lg:flex-row" id="contact">
+      <div className="flex grow flex-col">
+        <Text className="text-primary" variant="h2" weight="light">
+          Cory Siebler
+        </Text>
+        <Text component="h2" className="text-shade font-light" variant="h5">
+          Senior Software Engineer
+        </Text>
+      </div>
+      <div className="flex flex-col gap-1 lg:pr-56">
         <Link aria-label="Phone" className="flex gap-2" href="tel:14803192922">
           <PhoneIcon size={24} />
           <Text className="my-auto" variant="caption">

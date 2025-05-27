@@ -18,13 +18,12 @@ export function MegaplanITImage({
   className = 'rounded bg-black object-contain p-2',
 }: MegaplanITImageProps) {
   return (
-    <div className="relative">
+    <div className="relative mb-2 h-18 max-w-sm">
       <CldImage
         src={src}
         alt={alt}
-        width={width}
-        height={height}
-        crop="fill"
+        aspectRatio={width / height}
+        fill
         format="webp"
         className={className}
       />

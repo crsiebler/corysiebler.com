@@ -2,7 +2,7 @@
 
 import { CldImage } from 'next-cloudinary';
 
-interface AvatarImageProps {
+interface ArizonaStateUniversityImageProps {
   src?: string;
   alt?: string;
   width?: number;
@@ -10,23 +10,23 @@ interface AvatarImageProps {
   className?: string;
 }
 
-export function AvatarImage({
-  src = 'cory-siebler/avatar',
+export function ArizonaStateUniversityImage({
+  src = 'cory-siebler/arizona-state-university-ira-a-fulton-schools-of-engineering-logo',
   alt = 'Avatar',
-  width = 144,
-  height = 144,
+  width = 549,
+  height = 181,
   className = 'rounded-full',
-}: AvatarImageProps) {
+}: ArizonaStateUniversityImageProps) {
   return (
-    <div className="relative size-32">
+    <div className="relative max-w-56">
       <CldImage
         src={src}
         alt={alt}
+        aspectRatio={width / height}
         width={width}
         height={height}
         format="webp"
-        className={`object-cover ${className}`}
-        replaceBackground="white"
+        className={className}
       />
     </div>
   );

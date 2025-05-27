@@ -1,4 +1,4 @@
-import { MegaplanITImage } from '@/atoms/Images/MegaplanITIcon';
+import { MegaplanITImage } from '@/atoms/Images/MegaplanITImage';
 import { ExperienceArticle } from '@/organisms/ExperienceArticle';
 
 export function MegaplanITArticle() {

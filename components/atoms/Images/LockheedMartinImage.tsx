@@ -18,13 +18,12 @@ export function LockheedMartinImage({
   className = 'object-contain',
 }: LockheedMartinImageProps) {
   return (
-    <div className="relative">
+    <div className="relative mb-4 h-18 max-w-sm">
       <CldImage
         src={src}
         alt={alt}
-        width={width}
-        height={height}
-        crop="fill"
+        aspectRatio={width / height}
+        fill
         format="webp"
         className={className}
       />
