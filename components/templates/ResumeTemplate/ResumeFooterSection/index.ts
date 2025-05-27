@@ -1,0 +1,1 @@
+export { ResumeFooterSection } from './ResumeFooterSection';

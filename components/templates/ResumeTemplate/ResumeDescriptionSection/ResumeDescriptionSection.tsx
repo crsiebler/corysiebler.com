@@ -3,8 +3,11 @@ import { Text } from '@/atoms/Text';
 
 export function ResumeDescriptionSection() {
   return (
-    <div className="flex flex-col items-center gap-2 p-4">
-      <div className="border-primary h-32 w-32 overflow-hidden rounded-full border-2">
+    <section
+      className="flex flex-col items-center gap-2 p-4 lg:flex-row"
+      id="description"
+    >
+      <div className="border-primary rounded-full border-2 lg:mx-32">
         <AvatarImage />
       </div>
       <Text variant="body2">
@@ -17,6 +20,6 @@ export function ResumeDescriptionSection() {
         collaboration, problem-solving, and implementing best practices in
         full-stack development.
       </Text>
-    </div>
+    </section>
   );
 }

@@ -18,14 +18,14 @@ export function ER2Image({
   className = 'object-cover',
 }: ER2ImageProps) {
   return (
-    <div className="relative">
+    <div className="relative h-42 max-w-sm">
       <CldImage
         src={src}
         alt={alt}
+        aspectRatio={width / height}
+        format="webp"
         width={width}
         height={height}
-        crop="fill"
-        format="webp"
         className={className}
       />
     </div>

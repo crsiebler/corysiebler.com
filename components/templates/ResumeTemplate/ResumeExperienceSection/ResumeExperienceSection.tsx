@@ -11,7 +11,7 @@ import { OneOriginArticle } from './Articles/OneOriginArticle';
 
 export function ResumeExperienceSection() {
   return (
-    <section className="flex flex-col gap-4 p-4">
+    <section className="flex flex-col gap-4 p-4" id="experience">
       <SectionHeader title="Work Experience" />
       <OneOriginArticle />
       <MegaplanITArticle />

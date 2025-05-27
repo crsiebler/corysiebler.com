@@ -1,0 +1,1 @@
+export { ResumeEducationSection } from './ResumeEducationSection';

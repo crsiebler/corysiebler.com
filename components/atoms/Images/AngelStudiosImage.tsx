@@ -18,13 +18,12 @@ export function AngelStudiosImage({
   className = 'bg-black p-2 object-contain',
 }: OneOriginImageProps) {
   return (
-    <div className="relative">
+    <div className="relative mb-2 h-26 max-w-sm">
       <CldImage
         src={src}
         alt={alt}
-        width={width}
-        height={height}
-        crop="fill"
+        aspectRatio={width / height}
+        fill
         format="webp"
         className={className}
       />

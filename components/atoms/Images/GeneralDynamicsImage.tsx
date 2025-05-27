@@ -18,13 +18,12 @@ export function GeneralDynamicsImage({
   className = 'object-contain',
 }: GeneralDynamicsImageProps) {
   return (
-    <div className="relative">
+    <div className="relative mb-2 h-48 max-w-sm">
       <CldImage
         src={src}
         alt={alt}
-        width={width}
-        height={height}
-        crop="fill"
+        aspectRatio={width / height}
+        fill
         format="webp"
         className={className}
       />

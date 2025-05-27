@@ -18,13 +18,12 @@ export function NextivaImage({
   className = 'object-contain',
 }: NextivaImageProps) {
   return (
-    <div className="relative">
+    <div className="relative h-48 max-w-sm">
       <CldImage
         src={src}
         alt={alt}
-        width={width}
-        height={height}
-        crop="fill"
+        aspectRatio={width / height}
+        fill
         format="webp"
         className={className}
       />

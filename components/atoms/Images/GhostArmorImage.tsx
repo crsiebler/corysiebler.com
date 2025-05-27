@@ -18,13 +18,12 @@ export function GhostArmorImage({
   className = 'object-contain',
 }: GhostArmorImageProps) {
   return (
-    <div className="relative">
+    <div className="relative h-36 max-w-sm">
       <CldImage
         src={src}
         alt={alt}
-        width={width}
-        height={height}
-        crop="fill"
+        aspectRatio={width / height}
+        fill
         format="webp"
         className={className}
       />
