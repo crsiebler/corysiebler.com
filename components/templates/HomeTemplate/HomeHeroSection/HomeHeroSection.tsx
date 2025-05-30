@@ -34,9 +34,10 @@ export function HomeHeroSection() {
         </Text>
         <div className="flex gap-2">
           <LinkButton
-            className="h-full"
+            className="h-full px-4 py-2"
             color="primary"
             href="/resume"
+            rounded="sm"
             variant="contained"
           >
             <span className="flex flex-row gap-2">
@@ -58,9 +59,10 @@ export function HomeHeroSection() {
             </span>
           </LinkButton>
           <LinkButton
-            className="h-full"
+            className="h-full px-4 py-2"
             color="primary"
             href="/portfolio"
+            rounded="sm"
             variant="outlined"
           >
             <span className="flex flex-row">

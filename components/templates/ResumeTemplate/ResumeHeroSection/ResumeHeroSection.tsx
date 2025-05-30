@@ -10,7 +10,7 @@ export function ResumeHeroSection() {
       </Text>
       <div className="flex justify-center gap-4">
         <LinkButton
-          className="h-full"
+          className="h-full px-4 py-2"
           color="primary"
           href="https://docs.google.com/document/d/1RqyY9j_5iwr4sg6hJGz0-6dbhUcQbUe6yhzmMff9g0Q/edit?usp=sharing"
           rounded="sm"
@@ -28,6 +28,7 @@ export function ResumeHeroSection() {
         </LinkButton>
         <LinkButton
           href="/portfolio"
+          className="h-full px-4 py-2"
           color="primary"
           rounded="sm"
           variant="outlined"
