@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["corysiebler", "crsiebler", "Headshot", "Microcontrollers"],
+  "cSpell.words": [
+    "corysiebler",
+    "crsiebler",
+    "Headshot",
+    "Microcontrollers",
+    "nextos",
+    "TDRS"
+  ],
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#606ec7",
     "activityBar.background": "#606ec7",

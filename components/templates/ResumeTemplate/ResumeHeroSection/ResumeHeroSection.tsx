@@ -5,7 +5,7 @@ import { Text } from '@/atoms/Text';
 export function ResumeHeroSection() {
   return (
     <header className="flex flex-col items-center gap-6">
-      <Text variant="h1" weight="light">
+      <Text className="text-primary" variant="h1" weight="light">
         My Experience
       </Text>
       <div className="flex justify-center gap-4">

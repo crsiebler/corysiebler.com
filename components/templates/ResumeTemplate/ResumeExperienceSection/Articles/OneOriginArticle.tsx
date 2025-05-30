@@ -16,7 +16,7 @@ export function OneOriginArticle() {
         'Collaborated with stakeholders, managed Jira boards, and ensured Agile delivery.',
         'Optimized system performance, enhanced security, and enforced best practices across CI/CD pipelines and cloud infrastructure.',
       ]}
-      technologies="Python, Flask, AWS, Vue.js, Graph Databases, JavaScript, PostgreSQL, Tailwind CSS, Jenkins, Jira"
+      technologies="Python, Flask, AWS, Vue.js, Neo4j, JavaScript, PostgreSQL, Tailwind CSS, Jenkins, Jira"
     />
   );
 }
