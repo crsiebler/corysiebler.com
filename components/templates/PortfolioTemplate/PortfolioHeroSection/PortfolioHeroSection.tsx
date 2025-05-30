@@ -19,6 +19,7 @@ export function PortfolioHeroSection() {
           className="px-4 py-2 hover:shadow-md"
           color="primary"
           href="mailto:cory.siebler@pm.me"
+          rounded="sm"
           variant="contained"
         >
           <Text component="span" uppercase>
@@ -29,6 +30,7 @@ export function PortfolioHeroSection() {
           className="px-4 py-2 hover:shadow-md"
           href="/resume"
           color="primary"
+          rounded="sm"
           variant="outlined"
         >
           <Text component="span" uppercase>
