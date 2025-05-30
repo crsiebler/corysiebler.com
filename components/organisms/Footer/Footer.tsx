@@ -6,15 +6,11 @@ import { CopyrightYear } from './CopyrightYear';
 
 export function Footer() {
   return (
-    <footer className="bg-shade-dark text-white">
+    <footer className="bg-black text-white">
       <div className="mx-auto max-w-7xl px-6 py-1">
         <div className="container mx-auto flex w-full justify-between px-4">
-          <Link color="inherit" href="/">
-            <Text
-              component="span"
-              className="my-auto hidden md:flex"
-              variant="caption"
-            >
+          <Link className="my-auto hidden md:flex" color="inherit" href="/">
+            <Text component="span" variant="caption">
               {'Copyright © Cory Siebler '}
               <CopyrightYear />
               {'. All rights reserved.'}
@@ -27,7 +23,7 @@ export function Footer() {
                 aria-label={item.ariaLabel}
                 aria-controls="menu-top"
                 aria-haspopup="true"
-                className="group hover:bg-shade-light text-white"
+                className="group hover:bg-shade-light p-2 text-white"
                 rounded="full"
                 variant="text"
               >
@@ -35,7 +31,7 @@ export function Footer() {
                   href={item.href}
                   target={item.target ? item.target : '_self'}
                 >
-                  {item.icon(10)}
+                  {item.icon(16)}
                 </Link>
               </Button>
             ))}

@@ -5,31 +5,31 @@ export function ShortcutIcon() {
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/apple-touch-icon-180x180_ozp6nk.png`}
+        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/ar_1.0,w_180,h_180/cory-siebler/favicon.png`}
       />
       <link
         rel="apple-touch-icon"
         sizes="152x152"
-        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/apple-touch-icon-152x152_bixczp.png`}
+        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/ar_1.0,w_152,h_152/cory-siebler/favicon.png`}
       />
       <link
         rel="apple-touch-icon"
         sizes="120x120"
-        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/apple-touch-icon-120x120_b5wkox.png`}
+        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/ar_1.0,w_120,h_120/cory-siebler/favicon.png`}
       />
       <link
         rel="apple-touch-icon"
         sizes="76x76"
-        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/apple-touch-icon-76x76_wvdxpn.png`}
+        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/ar_1.0,w_76,h_76/cory-siebler/favicon.png`}
       />
       <link
         rel="apple-touch-icon"
         sizes="57x57"
-        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/apple-touch-icon-57x57_b7lj0b.png`}
+        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/ar_1.0,w_57,h_57/cory-siebler/favicon.png`}
       />
       <link
         rel="shortcut icon"
-        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/apple-touch-icon-57x57_b7lj0b.png`}
+        href={`https://res.cloudinary.com/${cloudinaryCloudName}/image/upload/ar_1.0,w_57,h_57/cory-siebler/favicon.png`}
       />
     </>
   );

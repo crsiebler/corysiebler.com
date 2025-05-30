@@ -1,7 +1,12 @@
+import { PortfolioHeroSection } from './PortfolioHeroSection';
+import { PortfolioProjectSection } from './PortfolioProjectSection';
+
 export function PortfolioTemplate() {
   return (
-    <main className="bg-white py-4">
-      <div className="container mx-auto max-w-5xl"></div>
+    <main className="py-8">
+      <PortfolioHeroSection />
+      <hr className="border-tint-light my-4" />
+      <PortfolioProjectSection />
     </main>
   );
 }

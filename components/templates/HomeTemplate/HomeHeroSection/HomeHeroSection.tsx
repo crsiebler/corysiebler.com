@@ -8,7 +8,7 @@ export function HomeHeroSection() {
   return (
     <section className="mx-auto flex flex-col gap-4 px-4 md:flex-row" id="hero">
       <div className="flex flex-grow flex-col gap-4">
-        <Text variant="h1" weight="light">
+        <Text className="text-primary" variant="h1" weight="light">
           Cory Siebler
         </Text>
         <Text

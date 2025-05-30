@@ -2,7 +2,7 @@
 
 import { CldImage } from 'next-cloudinary';
 
-interface OneOriginImageProps {
+interface AngelStudiosImageProps {
   src?: string;
   alt?: string;
   width?: number;
@@ -16,7 +16,7 @@ export function AngelStudiosImage({
   width = 1000,
   height = 242,
   className = 'bg-black p-2 object-contain',
-}: OneOriginImageProps) {
+}: AngelStudiosImageProps) {
   return (
     <div className="relative mb-2 h-26 max-w-sm">
       <CldImage
