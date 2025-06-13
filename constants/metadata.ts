@@ -72,6 +72,7 @@ export function getMetadata({
         sponsor: 'Arizona State University',
       },
     } as Person,
+    themeColor: '#3f50b5',
   };
 }
 
