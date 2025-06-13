@@ -6,7 +6,7 @@ export function AngelStudiosArticle() {
     <ExperienceArticle
       image={<AngelStudiosImage />}
       title="Angel Studios | Senior Software Engineer"
-      location="Provo, Utah (Remote) | January 2022 - April 2024"
+      location="Provo, Utah (Remote) | January 2022 - April 2024 (2 years 4 months)"
       roles={[
         'Achieved Top 5 page rank for dozens of search queries using highly optimized pages and articles.',
         'Created the About page for users to learn more information on Angel Studios.',

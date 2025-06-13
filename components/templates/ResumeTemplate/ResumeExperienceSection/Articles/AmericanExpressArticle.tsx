@@ -6,7 +6,7 @@ export function AmericanExpressArticle() {
     <ExperienceArticle
       image={<AmericanExpressImage />}
       title="American Express | Senior Software Engineer I"
-      location="Scottsdale, AZ | May 2021 - January 2022"
+      location="Scottsdale, AZ | May 2021 - January 2022 (9 months)"
       roles={[
         'Migrate existing repositories from Bitbucket to GitHub.',
         'Bugfixes for managing user sessions and handling timeouts.',

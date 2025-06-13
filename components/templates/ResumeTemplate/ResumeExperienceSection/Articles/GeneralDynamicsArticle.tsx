@@ -6,7 +6,7 @@ export function GeneralDynamicsArticle() {
     <ExperienceArticle
       image={<GeneralDynamicsImage />}
       title="General Dynamics | Senior Software Engineer II"
-      location="Scottsdale, AZ | June 2015 - June 2019"
+      location="Scottsdale, AZ | June 2015 - June 2019 (4 years 1 month)"
       roles={[
         'Worked on mission-critical defense software for secure communications.',
         'Implemented and tested embedded systems and real-time applications.',
