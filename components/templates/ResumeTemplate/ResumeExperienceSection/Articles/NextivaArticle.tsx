@@ -6,7 +6,7 @@ export function NextivaArticle() {
     <ExperienceArticle
       image={<NextivaImage />}
       title="Nextiva | Software Engineer II"
-      location="Scottsdale, AZ | July 2019 - January 2021"
+      location="Scottsdale, AZ | July 2019 - January 2021 (1 year 7 months)"
       roles={[
         'Develop backend microservices using Python Pyramid and Tornado frameworks.',
         'Implement new features and redesign existing user interface using React.js with hooks.',

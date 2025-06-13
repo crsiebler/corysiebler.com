@@ -6,7 +6,7 @@ export function MegaplanITArticle() {
     <ExperienceArticle
       image={<MegaplanITImage />}
       title="MegaplanIT | Senior Software Engineer (Contract)"
-      location="Scottsdale, AZ | May 2024 - November 2025"
+      location="Scottsdale, AZ | May 2025 - November 2025 (7 months)"
       roles={[
         'Led the development of a PCI compliance SaaS platform for enterprise clients.',
         'Architected and implemented scalable solutions using Next.js, React, Node.js, and AWS.',

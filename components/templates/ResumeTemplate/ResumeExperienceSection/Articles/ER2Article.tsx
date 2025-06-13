@@ -5,8 +5,8 @@ export function ER2Article() {
   return (
     <ExperienceArticle
       image={<ER2Image />}
-      title="ER2 | Web Developer"
-      location="Mesa, AZ | March 2021 - April 2021"
+      title="ER2 | Web Developer (Contract)"
+      location="Mesa, AZ | March 2021 - April 2021 (2 months)"
       roles={[
         'Built and maintained custom ERP modules for inventory and logistics management.',
         'Integrated barcode scanning and automated reporting features.',

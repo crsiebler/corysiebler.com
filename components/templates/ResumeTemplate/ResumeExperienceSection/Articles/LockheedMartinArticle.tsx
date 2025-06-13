@@ -6,7 +6,7 @@ export function LockheedMartinArticle() {
     <ExperienceArticle
       image={<LockheedMartinImage />}
       title="Lockheed Martin | Technologies Specialist"
-      location="Goodyear, AZ | May 2014 - January 2015"
+      location="Goodyear, AZ | May 2014 - January 2015 (9 months)"
       roles={[
         'Assist IRAD to provide Processing, Exploitation, and Dissemination (PED) on UAS Control Segment (UCS).',
         'Develop OSGi bundles utilizing Java, Apache Maven, and Apache Karaf.',

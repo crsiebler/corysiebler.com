@@ -6,7 +6,7 @@ export function GhostArmorArticle() {
     <ExperienceArticle
       image={<GhostArmorImage />}
       title="Ghost Armor | Web Developer"
-      location="Tempe, AZ | 2015 - 2017"
+      location="Tempe, AZ | 2015 - 2017 (2 years)"
       roles={[
         'Maintain an eCommerce website built on Symfony framework.',
         'Provide in office IT support along with on the phone help for approximately fifty remote locations throughout the U.S.',
