@@ -1,8 +1,8 @@
 import Link from 'next/link';
+import { CopyrightYear } from './CopyrightYear';
 import { Button } from '@/atoms/Button';
 import { Text } from '@/atoms/Text';
 import { linkItems } from '@/constants/navigation';
-import { CopyrightYear } from './CopyrightYear';
 
 export function Footer() {
   return (

@@ -7,6 +7,12 @@ export interface GetMetadataProps {
   title?: string;
 }
 
+export function getViewport() {
+  return {
+    themeColor: '#3f50b5',
+  };
+}
+
 export function getMetadata({
   description,
   path = '/',
@@ -72,7 +78,6 @@ export function getMetadata({
         sponsor: 'Arizona State University',
       },
     } as Person,
-    themeColor: '#3f50b5',
   };
 }
 

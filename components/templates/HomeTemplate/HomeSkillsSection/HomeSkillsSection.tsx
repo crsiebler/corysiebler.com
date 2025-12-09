@@ -1,6 +1,6 @@
-import { SectionHeader } from '@/molecules/SectionHeader';
 import { HomeSkillsGrid } from './HomeSkillsGrid';
 import { HomeSkillsParagraph } from './HomeSkillsParagraph';
+import { SectionHeader } from '@/molecules/SectionHeader';
 
 export function HomeSkillsSection() {
   return (

@@ -1,68 +1,40 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
-import tsPlugin from '@typescript-eslint/eslint-plugin';
+import nextPlugin from '@next/eslint-plugin-next';
+import prettierConfig from 'eslint-config-prettier';
 import importPlugin from 'eslint-plugin-import';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
-import prettierPlugin from 'eslint-plugin-prettier';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import tseslint from 'typescript-eslint';
 
-// Workaround for __dirname in ES modules
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-// Initialize FlatCompat with required parameters
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-});
-
-const eslintConfig = [
+export default [
   js.configs.recommended,
+  ...tseslint.configs.recommended,
   {
-    files: ['**/*.{js,jsx,ts,tsx}'],
-    languageOptions: {
-      parser: await import('@typescript-eslint/parser').then((m) => m.default),
-      parserOptions: {
-        ecmaVersion: 2021,
-        sourceType: 'module',
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
+    files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'],
+    plugins: {
+      '@next/next': nextPlugin,
+      import: importPlugin,
+      'jsx-a11y': jsxA11yPlugin,
+      react: reactPlugin,
+      'react-hooks': reactHooksPlugin,
     },
     settings: {
       react: {
         version: 'detect',
       },
     },
-  },
-  ...compat.extends(
-    'next/core-web-vitals',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/errors',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-    'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:react/recommended',
-    'prettier',
-  ),
-  {
-    plugins: {
-      '@typescript-eslint': tsPlugin,
-      import: importPlugin,
-      'jsx-a11y': jsxA11yPlugin,
-      prettier: prettierPlugin,
-      react: reactPlugin,
-      'react-hooks': reactHooksPlugin,
-    },
     rules: {
+      // Next.js rules
+      ...nextPlugin.configs.recommended.rules,
+      ...nextPlugin.configs['core-web-vitals'].rules,
+
+      // TypeScript rules
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-unused-vars': 'error',
+
+      // Import rules
       'import/no-unused-modules': 'error',
       'import/order': [
         'error',
@@ -90,6 +62,9 @@ const eslintConfig = [
           },
         },
       ],
+
+      // JSX A11y rules
+      ...jsxA11yPlugin.flatConfigs.recommended.rules,
       'jsx-a11y/anchor-is-valid': [
         'error',
         {
@@ -98,10 +73,14 @@ const eslintConfig = [
           aspects: ['invalidHref', 'preferButton'],
         },
       ],
-      'prettier/prettier': 'error',
+
+      // React rules
+      ...reactPlugin.configs.recommended.rules,
       'react/react-in-jsx-scope': 'off',
+
+      // React Hooks rules
+      ...reactHooksPlugin.configs.recommended.rules,
     },
   },
+  prettierConfig,
 ];
-
-export default eslintConfig;

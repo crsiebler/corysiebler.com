@@ -1,4 +1,3 @@
-import { SectionHeader } from '@/molecules/SectionHeader';
 import { AmericanExpressArticle } from './Articles/AmericanExpressArticle';
 import { AngelStudiosArticle } from './Articles/AngelStudiosArticle';
 import { ER2Article } from './Articles/ER2Article';
@@ -8,6 +7,7 @@ import { LockheedMartinArticle } from './Articles/LockheedMartinArticle';
 import { MegaplanITArticle } from './Articles/MegaplanITArticle';
 import { NextivaArticle } from './Articles/NextivaArticle';
 import { OneOriginArticle } from './Articles/OneOriginArticle';
+import { SectionHeader } from '@/molecules/SectionHeader';
 
 export function ResumeExperienceSection() {
   return (
