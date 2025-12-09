@@ -1,8 +1,7 @@
-import React from 'react';
+import { linkItems } from 'constants/navigation';
 import { AvatarImage } from '@/atoms/Images/AvatarImage';
 import { LinkButton } from '@/atoms/LinkButton';
 import { Text } from '@/atoms/Text';
-import { linkItems } from 'constants/navigation';
 
 export function AvatarSection() {
   return (

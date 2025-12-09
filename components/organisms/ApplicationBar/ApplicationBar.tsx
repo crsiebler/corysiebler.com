@@ -1,7 +1,7 @@
-import { NavigationBar } from '@/molecules/NavigationBar';
-import { NavigationPane } from '@/molecules/NavigationPane';
 import { AvatarSection } from './AvatarSection';
 import { NavigationSection } from './NavigationSection';
+import { NavigationBar } from '@/molecules/NavigationBar';
+import { NavigationPane } from '@/molecules/NavigationPane';
 
 interface ApplicationBarProps {
   title: string;

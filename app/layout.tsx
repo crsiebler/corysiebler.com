@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { roboto } from '@/app/ui/fonts';
 import { JsonLd } from '@/atoms/JsonLd';
 import { ShortcutIcon } from '@/atoms/ShortcutIcon';
-import { getMetadata, schema } from '@/constants/metadata';
+import { getMetadata, getViewport, schema } from '@/constants/metadata';
 import { JumpToTop } from '@/molecules/JumpToTop';
 import { ApplicationBar } from '@/organisms/ApplicationBar';
 import { Footer } from '@/organisms/Footer';
@@ -10,6 +10,7 @@ import { Footer } from '@/organisms/Footer';
 import './globals.css';
 
 export const metadata = getMetadata({});
+export const viewport = getViewport();
 
 export default function RootLayout({
   children,
