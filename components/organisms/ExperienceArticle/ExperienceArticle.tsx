@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import Link from 'next/link';
 import { Accordion } from '@/atoms/Accordion';
 import { Text } from '@/atoms/Text';
 
@@ -8,6 +9,7 @@ interface ExperienceArticleProps {
   location: string;
   roles: string[];
   technologies: string;
+  href?: string;
 }
 
 export function ExperienceArticle({
@@ -16,12 +18,24 @@ export function ExperienceArticle({
   location,
   roles,
   technologies,
+  href,
 }: ExperienceArticleProps) {
   return (
     <article className="flex flex-col">
       <div className="flex flex-col">
         {image}
-        <Text variant="h4">{title}</Text>
+        {href ? (
+          <Link
+            className="text-blue hover:underline"
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Text variant="h4">{title}</Text>
+          </Link>
+        ) : (
+          <Text variant="h4">{title}</Text>
+        )}
         <Text className="text-tint-darkest mb-2" variant="body1">
           {location}
         </Text>

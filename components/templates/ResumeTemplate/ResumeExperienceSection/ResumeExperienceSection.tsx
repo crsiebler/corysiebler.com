@@ -7,12 +7,14 @@ import { LockheedMartinArticle } from './Articles/LockheedMartinArticle';
 import { MegaplanITArticle } from './Articles/MegaplanITArticle';
 import { NextivaArticle } from './Articles/NextivaArticle';
 import { OneOriginArticle } from './Articles/OneOriginArticle';
+import { PhiTechnologySolutionsArticle } from './Articles/PhiTechnologySolutionsArticle';
 import { SectionHeader } from '@/molecules/SectionHeader';
 
 export function ResumeExperienceSection() {
   return (
     <section className="flex flex-col gap-4 p-4" id="experience">
       <SectionHeader title="Work Experience" />
+      <PhiTechnologySolutionsArticle />
       <OneOriginArticle />
       <MegaplanITArticle />
       <AngelStudiosArticle />

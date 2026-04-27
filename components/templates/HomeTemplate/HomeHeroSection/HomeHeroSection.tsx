@@ -32,6 +32,18 @@ export function HomeHeroSection() {
           </Link>{' '}
           account.
         </Text>
+        <Text className="text-shade" component="p" variant="body1">
+          Want to hire me? Reach out to{' '}
+          <Link
+            className="text-blue hover:underline"
+            href="https://phitechsolutions.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Phi Technology Solutions
+          </Link>{' '}
+          and I will build and innovate with you!
+        </Text>
         <div className="flex gap-2">
           <LinkButton
             className="h-full px-4 py-2"
