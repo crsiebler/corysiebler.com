@@ -1,4 +1,3 @@
-import React from 'react';
 import { skills } from '@/constants/skills';
 import { SkillCard } from '@/molecules/SkillCard/SkillCard';
 

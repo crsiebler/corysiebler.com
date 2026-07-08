@@ -1,86 +1,57 @@
 export const skills = {
-  JavaScript: {
+  'AI Agents': {
     description:
-      '✨ JavaScript front-end development focusing on 💕 Next.js and ⚛️ React.js with hooks.',
-    icons: ['JavaScriptIcon', 'ReactIcon', 'NextJsIcon'],
+      '🤖 Building AI-augmented developer workflows with OpenCode, OpenAI-powered tools, MCP servers, LangGraph, Ollama, and prompt-driven agent loops.',
+    icons: ['OpenCodeIcon', 'ChatGptIcon', 'McpIcon', 'LangGraphIcon'],
   },
-  'HTML5 & CSS3': {
-    description: '🌐 Web development 101 with some extra Sass flavoring 💅.',
-    icons: ['Html5Icon', 'Css3Icon', 'SassIcon'],
-  },
-  Styling: {
+  'RAG Search': {
     description:
-      '🎨 Work with the latest front-end web frameworks and libraries such as Material-UI, Chakra-UI, and ✌🏻 Tailwind CSS.',
-    icons: ['TailwindIcon', 'ChakraUiIcon', 'MaterialUiIcon'],
+      '🔎 Exploring retrieval-augmented generation, semantic search, vector databases, embeddings, and context-aware agents.',
+    icons: ['PineconeIcon', 'ChromaDbIcon', 'LangChainIcon', 'OllamaIcon'],
   },
-  Python: {
+  Frontend: {
     description:
-      '🐍 Scripting and RESTful API development with Python3, Flask, Sphinx, Alembic, and Django.',
-    icons: ['PythonIcon', 'DjangoIcon', 'FlaskIcon'],
+      '✨ TypeScript-first frontend development with React, Next.js, Vue, GraphQL, Tailwind CSS, and component-driven UI systems.',
+    icons: ['TypeScriptIcon', 'ReactIcon', 'NextJsIcon', 'VueIcon'],
   },
-  Java: {
+  'Backend APIs': {
     description:
-      '☕ J2EE Applications with Maven, modular design using OSGi, microservices with Spring and Hibernate.',
-    icons: ['JavaIcon', 'SpringIcon'],
+      '🧩 API and service development with Python, Node.js, PHP, Java, GraphQL, queues, caches, and integration-focused architecture.',
+    icons: ['PythonIcon', 'PhpIcon', 'JavaIcon', 'GraphqlIcon'],
   },
-  PHP: {
+  'DevOps CI/CD': {
     description:
-      '🐘 PHP web development utilizing the Symfony framework. Doctrine, Twig, & Api Platform!',
-    icons: ['PhpIcon', 'SymfonyIcon', 'ComposerIcon'],
+      '🚀 Automating delivery with Docker, GitHub Actions, Jenkins, Kubernetes, deterministic quality gates, and repeatable deployments.',
+    icons: ['DockerIcon', 'GitHubActionsIcon', 'JenkinsIcon', 'KubernetesIcon'],
   },
-  'Artificial Intelligence': {
+  Testing: {
     description:
-      '🤖 Experience using AI tools such as GitHub Copilot, ChatGPT, DeepSeek, Midjourney, and more to enhance productivity and creativity.',
-    icons: ['CopilotIcon', 'ChatGptIcon', 'DeepSeekIcon', 'MidjourneyIcon'],
+      '🧪 Improving confidence with Cypress, Vitest, Jest, React Testing Library, Playwright CI, and coverage-focused test strategy.',
+    icons: ['CypressIcon', 'VitestIcon', 'JestIcon', 'PlaywrightIcon'],
   },
-  Documentation: {
+  'Data Stores': {
     description:
-      '📝 Generate Swagger documentation for API endpoints. Store reusable, extendable, and customizable React components in Storybook.',
-    icons: ['SwaggerIcon', 'StorybookIcon'],
+      '🗄️ Designing and maintaining relational, document, cache, and retrieval-oriented data stores for application and agent workflows.',
+    icons: ['PostgreSqlIcon', 'OracleIcon', 'MongoDbIcon', 'RedisIcon'],
   },
-  DevOps: {
+  Architecture: {
     description:
-      '🚀 Deployment pipelines for Dockerized containers hosted on Kubernetes clusters and perform tests automation with Jenkins.',
-    icons: ['DockerIcon', 'KubernetesIcon', 'JenkinsIcon'],
+      '🧭 Clarifying product requirements, system boundaries, API contracts, reusable components, tooling choices, and agent-assisted engineering plans.',
+    icons: ['SwaggerIcon', 'StorybookIcon', 'JiraIcon', 'BunIcon'],
   },
-  Microcontrollers: {
+  'Cloud Infra': {
     description:
-      '🤖 Designing fun projects for around the house automation and other gadgets using Arduino and Raspberry Pis.',
-    icons: ['ArduinoIcon', 'RaspberryPiIcon'],
-  },
-  IAM: {
-    description:
-      '🔐 Sign in, authorize, and manage users with Auth0 standards. Provide Single Sign-On (SSO) for platforms.',
-    icons: ['Auth0Icon'],
-  },
-  Databases: {
-    description:
-      '🗄️ Management, administration, and architecture for OLTP and OLAP databases. Familiar with Oracle, PostgreSQL, and MySQL DBMS.',
-    icons: ['PostgreSqlIcon', 'MySqlIcon', 'OracleIcon'],
-  },
-  Tools: {
-    description:
-      '🛠️ RabbitMQ topics galore. In-memory data stores and caching with Redis. Nginx web server. Create redundancy and efficiency for your applications.',
-    icons: ['RabbitMqIcon', 'RedisIcon', 'NginxIcon'],
+      '☁️ Shipping cloud software with AWS, Cloudflare, Vercel, Terraform, Bun, container platforms, and pragmatic infrastructure automation.',
+    icons: ['AwsIcon', 'CloudflareIcon', 'VercelIcon', 'TerraformIcon'],
   },
   'Version Control': {
     description:
-      '🔄 Can you imagine a world before Git? I shudder to think about programming without GitHub or Bitbucket.',
+      '🔄 Collaborating through Git, GitHub, Bitbucket, pull requests, code review, and automated repository workflows.',
     icons: ['GitIcon', 'GitHubIcon', 'BitbucketIcon'],
   },
-  IDEs: {
+  'IoT Automation': {
     description:
-      "💻 A developer's best friend. Visual Studio Code 💯 because it's free but JetBrains makes great products as well.",
-    icons: ['VisualStudioCodeIcon', 'JetBrainsIcon'],
-  },
-  'Cloud Computing': {
-    description:
-      '☁️ Utilize cloud infrastructure such as Heroku, Vercel, and AWS (Lambda, EC2, RDS, S3, Neptune).',
-    icons: ['AwsIcon', 'HerokuIcon', 'VercelIcon'],
-  },
-  Misc: {
-    description:
-      '🧩 The latest APIs with GraphQL. Bundle up applications with Webpack, Babel, and Node.js.',
-    icons: ['GraphqlIcon', 'WebpackIcon', 'NodeJsIcon', 'BabelIcon'],
+      '🛠️ Building hands-on automation projects with Arduino, Raspberry Pi, and personal-assistant style experiments that bridge hardware and AI.',
+    icons: ['ArduinoIcon', 'RaspberryPiIcon'],
   },
 };
