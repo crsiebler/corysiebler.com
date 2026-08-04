@@ -7,16 +7,12 @@ beforeAll(() => {
 });
 
 describe('ResumeExperienceSection', () => {
-  it('renders Phi Technology Solutions as the first experience', () => {
+  it('renders PNC as the first experience', () => {
     render(<ResumeExperienceSection />);
 
     const articles = screen.getAllByRole('article');
-    expect(articles[0].textContent).toContain('Phi Technology Solutions, LLC');
-    expect(articles[0].textContent).toContain('Owner');
-    expect(
-      screen
-        .getByRole('link', { name: /Phi Technology Solutions, LLC/i })
-        .getAttribute('href'),
-    ).toBe('https://phitechsolutions.com/');
+    expect(articles[0].textContent).toContain('PNC Bank');
+    expect(articles[0].textContent).toContain('Software Engineer Principal');
+    expect(articles[0].textContent).toContain('August 2026 - Present');
   });
 });
