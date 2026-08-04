@@ -6,7 +6,7 @@ export function OneOriginArticle() {
     <ExperienceArticle
       image={<OneOriginImage />}
       title="OneOrigin | Technical Lead"
-      location="Scottsdale, AZ | Mar 2025 - Present"
+      location="Scottsdale, AZ | Mar 2025 - Jul 2026"
       roles={[
         'Lead the development of Triangulator, a platform automating credit transfer eligibility evaluations for post-secondary institutions (sponsored by ASU).',
         'Architected and implemented scalable, cloud-native solutions using Python, Flask, SQLAlchemy, AWS Lambda, Step Functions, Neptune (graph DB), PostgreSQL, and Vue.js + Tailwind CSS.',
