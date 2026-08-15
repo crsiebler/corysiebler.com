@@ -10,7 +10,7 @@ export function ResumeContactSection() {
           Cory Siebler
         </Text>
         <Text component="h2" className="text-shade font-light" variant="h5">
-          Senior Software Engineer
+          Principal Software Engineer
         </Text>
       </div>
       <div className="flex flex-col gap-1 lg:pr-56">

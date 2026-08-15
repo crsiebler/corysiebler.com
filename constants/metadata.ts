@@ -24,15 +24,15 @@ export function getMetadata({
     alternates: {
       canonical: `${baseUrl}${path}`,
     },
-    title: `${page}Cory Siebler - Senior Software Engineer`,
+    title: `${page}Cory Siebler - Principal Software Engineer`,
     description:
       description ??
-      'Cory Siebler is a Senior Software Engineer, business owner of Phi Technology Solutions, LLC, and Assistant Vice President of Engineering at PNC Bank. Explore his expertise.',
+      'Cory Siebler is a Principal Software Engineer, business owner of Phi Technology Solutions, LLC, and Principal Software Engineer at PNC Bank. Explore his expertise.',
     keywords:
-      'Cory Siebler, Senior Software Engineer, Phi Technology Solutions, LLC, PNC Bank,OneOrigin, Triangulator, Arizona State University, full-stack developer, Next.js, Python, React.js, web development, software architecture, portfolio, GitHub',
+      'Cory Siebler, Principal Software Engineer, Phi Technology Solutions, LLC, PNC Bank,OneOrigin, Triangulator, Arizona State University, full-stack developer, Next.js, Python, React.js, web development, software architecture, portfolio, GitHub',
     author: 'Cory Siebler',
     openGraph: {
-      title: `${page}Cory Siebler - Senior Software Engineer`,
+      title: `${page}Cory Siebler - Principal Software Engineer`,
       type: 'website',
       locale: 'en_US',
       url: `${baseUrl}${path}`,
@@ -52,14 +52,14 @@ export function getMetadata({
       name: 'Cory Siebler',
       image: `${baseUrl}/images/portrait.jpg`,
       description:
-        'Cory Siebler is a Software Engineer, business owner of Phi Technology Solutions, LLC, and Assistant Vice President of Engineering at PNC Bank. Explore his expertise.',
+        'Cory Siebler is a Software Engineer, business owner of Phi Technology Solutions, LLC, and Principal Software Engineer at PNC Bank. Explore his expertise.',
       url: baseUrl,
       sameAs: [
         'https://github.com/corysiebler',
         'https://www.linkedin.com/in/corysiebler/',
         'https://phitechsolutions.com',
       ],
-      jobTitle: 'Senior Software Engineer & Business Owner',
+      jobTitle: 'Principal Software Engineer & Business Owner',
       worksFor: [
         {
           '@type': 'Organization',
@@ -87,14 +87,14 @@ export const schema: Person = {
   name: 'Cory Siebler',
   image: `${env.NEXT_PUBLIC_BASE_URL}/images/portrait.jpg`,
   description:
-    'Cory Siebler is a Senior Software Engineer, business owner of Phi Technology Solutions, LLC, and Assistant Vice President of Engineering at PNC Bank. Explore his portfolio, skills, and expertise.',
+    'Cory Siebler is a Principal Software Engineer, business owner of Phi Technology Solutions, LLC, and Principal Software Engineer at PNC Bank. Explore his portfolio, skills, and expertise.',
   url: 'https://corysiebler.com',
   sameAs: [
     'https://github.com/corysiebler',
     'https://www.linkedin.com/in/corysiebler/',
     'https://phitechsolutions.com',
   ],
-  jobTitle: 'Senior Software Engineer & Business Owner',
+  jobTitle: 'Principal Software Engineer & Business Owner',
   worksFor: [
     {
       '@type': 'Organization',

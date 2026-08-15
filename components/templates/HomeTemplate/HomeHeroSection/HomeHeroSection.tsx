@@ -17,7 +17,7 @@ export function HomeHeroSection() {
           variant="h4"
           weight="light"
         >
-          Senior Software Engineer
+          Principal Software Engineer
         </Text>
         <Text className="text-shade" component="p" variant="body1">
           I am a full-stack developer specializing in web development with
