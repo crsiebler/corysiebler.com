@@ -11,14 +11,13 @@ export function ResumeDescriptionSection() {
         <AvatarImage />
       </div>
       <Text variant="body2">
-        Results-driven Full Stack Developer with 13+ years of experience
-        designing, developing, and maintaining scalable web applications.
-        Expertise in React, Next.js, Python, Node.js, Java, and PHP with strong
-        proficiency in RESTful APIs, SQL databases, and cloud deployments.
-        Skilled in containerization, CI/CD automation, and optimizing
-        performance for high-traffic applications. Adept at cross-functional
-        collaboration, problem-solving, and implementing best practices in
-        full-stack development.
+        Principal Software Engineer and Technical Leader with 14+ years of
+        experience designing, modernizing, and scaling enterprise applications.
+        Deep experience with Python, TypeScript, React, Next.js, AWS, REST and
+        GraphQL APIs, SQL and NoSQL databases, CI/CD, and cloud-native
+        architecture. Proven ability to lead engineering teams, establish
+        development standards, improve reliability and performance, and leverage
+        AI-assisted and agentic workflows to improve software delivery.
       </Text>
     </section>
   );
