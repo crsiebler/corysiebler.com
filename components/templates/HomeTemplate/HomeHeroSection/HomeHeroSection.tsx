@@ -7,7 +7,7 @@ import { Text } from '@/atoms/Text';
 export function HomeHeroSection() {
   return (
     <section className="mx-auto flex flex-col gap-4 px-4 md:flex-row" id="hero">
-      <div className="flex flex-grow flex-col gap-4">
+      <div className="flex grow flex-col gap-4">
         <Text className="text-primary" variant="h1" weight="light">
           Cory Siebler
         </Text>
@@ -20,8 +20,12 @@ export function HomeHeroSection() {
           Principal Software Engineer
         </Text>
         <Text className="text-shade" component="p" variant="body1">
-          I am a full-stack developer specializing in web development with
-          Next.js and Python. Want to see more of my work? Check out my{' '}
+          I am a Principal Software Engineer with 14+ years of experience
+          building scalable web applications, cloud-native systems, and
+          developer platforms. My work spans full-stack development,
+          architecture, site reliability, and AI-enabled engineering using
+          technologies such as Python, React, Next.js, TypeScript, and AWS. Want
+          to see more of my work? Check out my{' '}
           <Link
             className="text-blue hover:underline"
             href="https://github.com/crsiebler"

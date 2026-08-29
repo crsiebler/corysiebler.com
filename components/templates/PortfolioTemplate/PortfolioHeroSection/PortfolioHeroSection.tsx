@@ -9,10 +9,12 @@ export function PortfolioHeroSection() {
     >
       <Text variant="h1">Notable Projects</Text>
       <Text className="text-tint-darkest" variant="body1">
-        A compilation of various projects containing contributions from me. From
-        technical support to project management, I have a wide array of
-        experience. Currently, my professional career focuses on web design and
-        full-stack development using the latest technologies.
+        A collection of projects and products I have helped design, build,
+        modernize, and support throughout my career. My experience spans
+        full-stack development, technical leadership, cloud architecture, site
+        reliability, automation, AI-assisted engineering, and project delivery
+        across industries including financial services, education, media,
+        aerospace, and consulting.
       </Text>
       <div className="flex gap-4">
         <LinkButton

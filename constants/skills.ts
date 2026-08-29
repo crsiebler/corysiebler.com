@@ -26,8 +26,8 @@ export const skills = {
   },
   Testing: {
     description:
-      '🧪 Improving confidence with Cypress, Vitest, Jest, React Testing Library, Playwright CI, and coverage-focused test strategy.',
-    icons: ['CypressIcon', 'VitestIcon', 'JestIcon', 'PlaywrightIcon'],
+      '🧪 Improving confidence with Playwright CI, Vitest, Jest, React Testing Library, Cypress, and coverage-focused test strategy.',
+    icons: ['PlaywrightIcon', 'VitestIcon', 'JestIcon', 'CypressIcon'],
   },
   'Data Stores': {
     description:
