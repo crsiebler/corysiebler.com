@@ -20,7 +20,7 @@ export function PortfolioHeroSection() {
         <LinkButton
           className="px-4 py-2 hover:shadow-md"
           color="primary"
-          href="mailto:cory.siebler@pm.me"
+          href="mailto:cory.siebler@gmail.com"
           rounded="sm"
           variant="contained"
         >

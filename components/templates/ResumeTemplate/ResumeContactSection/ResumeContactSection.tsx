@@ -23,11 +23,11 @@ export function ResumeContactSection() {
         <Link
           aria-label="Email"
           className="flex gap-2"
-          href="mailto:cory.siebler@pm.me"
+          href="mailto:cory.siebler@gmail.com"
         >
           <MailIcon size={24} />
           <Text className="my-auto" variant="caption">
-            cory.siebler@pm.me
+            cory.siebler@gmail.com
           </Text>
         </Link>
         <Link aria-label="Website" className="flex gap-2" href="/">

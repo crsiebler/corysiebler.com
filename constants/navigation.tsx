@@ -31,7 +31,7 @@ export const linkItems: LinkItems[] = [
   },
   {
     ariaLabel: 'email',
-    href: 'mailto:cory.siebler@protonmail.com',
+    href: 'mailto:cory.siebler@gmail.com',
     icon: (size = 24) => <MailIcon size={size} />,
   },
   {
