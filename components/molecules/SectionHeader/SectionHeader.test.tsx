@@ -7,7 +7,7 @@ describe('SectionHeader Component', () => {
     const { container } = render(<SectionHeader title="My Section" />);
     const headerElement = container.firstChild as HTMLElement;
 
-    expect(headerElement.tagName.toLowerCase()).toBe('h3');
+    expect(headerElement.tagName.toLowerCase()).toBe('h2');
     expect(headerElement.textContent).toBe('My Section');
   });
 
@@ -16,6 +16,6 @@ describe('SectionHeader Component', () => {
     const headerElement = container.firstChild as HTMLElement;
 
     expect(headerElement.classList.contains('border-l-4')).toBe(true);
-    expect(headerElement.classList.contains('border-indigo-600')).toBe(true);
+    expect(headerElement.classList.contains('border-line')).toBe(true);
   });
 });

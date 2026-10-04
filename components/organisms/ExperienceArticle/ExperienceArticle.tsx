@@ -26,17 +26,21 @@ export function ExperienceArticle({
         {image}
         {href ? (
           <Link
-            className="text-blue hover:underline"
+            className="text-accent hover:underline"
             href={href}
             target="_blank"
             rel="noreferrer"
           >
-            <Text variant="h4">{title}</Text>
+            <Text component="h3" variant="h4">
+              {title}
+            </Text>
           </Link>
         ) : (
-          <Text variant="h4">{title}</Text>
+          <Text component="h3" variant="h4">
+            {title}
+          </Text>
         )}
-        <Text className="text-tint-darkest mb-2" variant="body1">
+        <Text className="text-muted mb-2" variant="body1">
           {location}
         </Text>
       </div>

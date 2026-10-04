@@ -1,5 +1,12 @@
-import { env } from 'process';
-import { Person } from '@/atoms/JsonLd';
+import type { Metadata, Viewport } from 'next';
+import type { Person } from '@/atoms/JsonLd';
+import { githubUrl, linkedInUrl } from '@/constants/contact';
+
+export const siteUrl =
+  process.env.NEXT_PUBLIC_BASE_URL || 'https://corysiebler.com';
+const portrait = `https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || 'di8xu0omv'}/image/upload/f_auto,q_auto,w_800/cory-siebler/portrait`;
+const description =
+  'Cory Siebler is a Principal Software Engineer in Phoenix, Arizona, building reliable software, cloud platforms, and AI-enabled engineering workflows.';
 
 export interface GetMetadataProps {
   description?: string;
@@ -7,77 +14,42 @@ export interface GetMetadataProps {
   title?: string;
 }
 
-export function getViewport() {
+export function getViewport(): Viewport {
   return {
-    themeColor: '#3f50b5',
+    themeColor: [
+      { media: '(prefers-color-scheme: light)', color: '#f5f6f3' },
+      { media: '(prefers-color-scheme: dark)', color: '#0d1723' },
+    ],
   };
 }
 
 export function getMetadata({
-  description,
+  description: pageDescription = description,
   path = '/',
   title = 'Home',
-}: GetMetadataProps) {
-  const baseUrl = env.NEXT_PUBLIC_BASE_URL;
-  const page = title ? `${title} | ` : '';
+}: GetMetadataProps): Metadata {
+  const pageTitle = `${title ? `${title} | ` : ''}Cory Siebler — Principal Software Engineer`;
   return {
-    alternates: {
-      canonical: `${baseUrl}${path}`,
-    },
-    title: `${page}Cory Siebler - Principal Software Engineer`,
-    description:
-      description ??
-      'Cory Siebler is a Principal Software Engineer, business owner of Phi Technology Solutions, LLC, and Principal Software Engineer at PNC Bank. Explore his expertise.',
-    keywords:
-      'Cory Siebler, Principal Software Engineer, Phi Technology Solutions, LLC, PNC Bank,OneOrigin, Triangulator, Arizona State University, full-stack developer, Next.js, Python, React.js, web development, software architecture, portfolio, GitHub',
-    author: 'Cory Siebler',
+    metadataBase: new URL(siteUrl),
+    alternates: { canonical: path },
+    title: pageTitle,
+    description: pageDescription,
+    authors: [{ name: 'Cory Siebler', url: siteUrl }],
     openGraph: {
-      title: `${page}Cory Siebler - Principal Software Engineer`,
+      title: pageTitle,
+      description: pageDescription,
       type: 'website',
       locale: 'en_US',
-      url: `${baseUrl}${path}`,
-      site_name: 'Cory Siebler',
-      images: [
-        {
-          url: `https://res.cloudinary.com/di8xu0omv/image/upload/cory-siebler/portrait.jpeg`,
-          width: 800,
-          height: 800,
-          alt: 'Cory Siebler Portrait',
-        },
-      ],
+      url: path,
+      siteName: 'Cory Siebler',
+      images: [{ url: portrait, width: 800, height: 800, alt: 'Cory Siebler' }],
     },
-    jsonLd: {
-      '@context': 'https://schema.org',
-      '@type': 'Person',
-      name: 'Cory Siebler',
-      image: `${baseUrl}/images/portrait.jpg`,
-      description:
-        'Cory Siebler is a Software Engineer, business owner of Phi Technology Solutions, LLC, and Principal Software Engineer at PNC Bank. Explore his expertise.',
-      url: baseUrl,
-      sameAs: [
-        'https://github.com/corysiebler',
-        'https://www.linkedin.com/in/corysiebler/',
-        'https://phitechsolutions.com',
-      ],
-      jobTitle: 'Principal Software Engineer & Business Owner',
-      worksFor: [
-        {
-          '@type': 'Organization',
-          name: 'Phi Technology Solutions, LLC',
-          url: 'https://phitechsolutions.com',
-        },
-        {
-          '@type': 'Organization',
-          name: 'OneOrigin',
-          url: 'https://oneorigin.us',
-        },
-      ],
-      affiliation: {
-        '@type': 'Project',
-        name: 'Triangulator',
-        sponsor: 'Arizona State University',
-      },
-    } as Person,
+    twitter: {
+      card: 'summary_large_image',
+      title: pageTitle,
+      description: pageDescription,
+      images: [portrait],
+    },
   };
 }
 
@@ -85,15 +57,10 @@ export const schema: Person = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Cory Siebler',
-  image: `${env.NEXT_PUBLIC_BASE_URL}/images/portrait.jpg`,
-  description:
-    'Cory Siebler is a Principal Software Engineer, business owner of Phi Technology Solutions, LLC, and Principal Software Engineer at PNC Bank. Explore his portfolio, skills, and expertise.',
-  url: 'https://corysiebler.com',
-  sameAs: [
-    'https://github.com/corysiebler',
-    'https://www.linkedin.com/in/corysiebler/',
-    'https://phitechsolutions.com',
-  ],
+  image: portrait,
+  description,
+  url: siteUrl,
+  sameAs: [githubUrl, linkedInUrl, 'https://phitechsolutions.com'],
   jobTitle: 'Principal Software Engineer & Business Owner',
   worksFor: [
     {
@@ -101,41 +68,16 @@ export const schema: Person = {
       name: 'Phi Technology Solutions, LLC',
       url: 'https://phitechsolutions.com',
     },
-    {
-      '@type': 'Organization',
-      name: 'PNC Bank',
-      url: 'https://pnc.com',
-    },
+    { '@type': 'Organization', name: 'PNC Bank', url: 'https://pnc.com' },
   ],
-  affiliation: {
-    '@type': 'Project',
-    name: 'Triangulator',
-    sponsor: 'Arizona State University',
-  },
-  skills: [
-    'JavaScript',
-    'React.js',
+  knowsAbout: [
+    'Software architecture',
+    'TypeScript',
+    'React',
     'Next.js',
-    'HTML5',
-    'CSS3',
-    'Tailwind CSS',
     'Python',
-    'Django',
-    'Java',
-    'Spring',
-    'PHP',
-    'Symfony',
-    'DevOps',
-    'Docker',
-    'Kubernetes',
-    'Databases',
-    'PostgreSQL',
-    'MySQL',
-    'Redis',
-    'GraphQL',
-    'Git',
     'AWS',
-    'Heroku',
-    'Vercel',
+    'Developer platforms',
+    'AI-enabled engineering',
   ],
 };

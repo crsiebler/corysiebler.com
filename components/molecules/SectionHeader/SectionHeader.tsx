@@ -6,11 +6,7 @@ interface SectionHeaderProps {
 
 export function SectionHeader({ title }: SectionHeaderProps) {
   return (
-    <Text
-      component="h3"
-      className="border-l-4 border-indigo-600 pl-4"
-      variant="h4"
-    >
+    <Text component="h2" className="border-line border-l-4 pl-4" variant="h4">
       {title}
     </Text>
   );

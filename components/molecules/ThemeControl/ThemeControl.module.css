@@ -1,0 +1,37 @@
+.control {
+  position: relative;
+  display: inline-block;
+}
+
+.control select {
+  appearance: none;
+  min-height: 40px;
+  padding: 8px 38px 8px 12px;
+  border: 1px solid var(--workspace-line);
+  border-radius: 6px;
+  background: var(--workspace-background);
+  color: var(--workspace-muted);
+  font:
+    12px var(--font-geist-mono),
+    monospace;
+  cursor: pointer;
+}
+
+.caret {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: var(--workspace-muted);
+  pointer-events: none;
+}
+
+@media (forced-colors: active) {
+  .control select {
+    appearance: auto;
+  }
+
+  .caret {
+    display: none;
+  }
+}

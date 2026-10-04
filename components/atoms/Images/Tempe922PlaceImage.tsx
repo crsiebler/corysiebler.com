@@ -12,7 +12,7 @@ interface Tempe922PlaceImageProps {
 
 export function Tempe922PlaceImage({
   src = 'cory-siebler/922-place',
-  alt = 'American Express Logo',
+  alt = '922 Place student housing community',
   width = 940,
   height = 517,
   className = 'object-cover',

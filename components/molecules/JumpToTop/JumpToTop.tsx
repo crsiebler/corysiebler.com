@@ -15,23 +15,30 @@ export function JumpToTop() {
   };
 
   const scrollToTop = () => {
+    document.getElementById('main-content')?.focus({ preventScroll: true });
     const anchorDiv = document.getElementById('anchor');
-    anchorDiv?.scrollIntoView({ behavior: 'smooth' });
+    anchorDiv?.scrollIntoView({
+      behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+        ? 'auto'
+        : 'smooth',
+    });
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility, { passive: true });
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
   return (
     isVisible && (
       <button
-        className="bg-primary fixed right-5 bottom-5 z-40 rounded-full p-2"
+        className="bg-surface text-accent border-line fixed right-5 bottom-5 z-40 rounded-full border p-3"
+        type="button"
+        aria-label="Back to top"
         data-testid="jump-to-top"
         onClick={scrollToTop}
       >
-        <ChevronUpIcon className="text-white" />
+        <ChevronUpIcon />
       </button>
     )
   );

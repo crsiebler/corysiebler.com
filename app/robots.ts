@@ -1,11 +1,9 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
+import { siteUrl } from '@/constants/metadata';
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: '*',
-      allow: '/',
-    },
-    sitemap: 'https://corysiebler.com/sitemap.xml',
+    rules: { userAgent: '*', allow: '/' },
+    sitemap: new URL('/sitemap.xml', siteUrl).toString(),
   };
 }

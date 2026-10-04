@@ -12,7 +12,7 @@ interface NextivaImageProps {
 
 export function NextivaImage({
   src = 'cory-siebler/nextiva-logo',
-  alt = 'Angel Studios Logo',
+  alt = 'Nextiva Logo',
   width = 1318,
   height = 659,
   className = 'object-contain',
