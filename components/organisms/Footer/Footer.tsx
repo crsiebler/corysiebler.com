@@ -7,7 +7,8 @@ export function Footer() {
     <footer className="workspace-footer">
       <p>
         <span>
-          © <CopyrightYear /> Cory Siebler.
+          © <CopyrightYear initialYear={new Date().getFullYear()} /> Cory
+          Siebler.
         </span>{' '}
         Built with care.
       </p>
