@@ -24,6 +24,7 @@ export function PNCImage({
         alt={alt}
         aspectRatio={width / height}
         fill
+        sizes="(max-width: 460px) calc(100vw - 76px), 384px"
         format="webp"
         className={className}
       />

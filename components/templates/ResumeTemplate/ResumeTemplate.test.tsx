@@ -70,10 +70,9 @@ describe('Resume accessibility', () => {
     });
   });
 
-  it('preserves visible contact values in accessible link names', () => {
-    render(<ResumeTemplate />);
+  it('preserves visible contact values in accessible link names without exposing a phone link', () => {
+    const { container } = render(<ResumeTemplate />);
     for (const [name, href] of [
-      ['(480) 319-2922', 'tel:14803192922'],
       ['cory.siebler@gmail.com', 'mailto:cory.siebler@gmail.com'],
       ['corysiebler.com', '/'],
     ]) {
@@ -81,21 +80,17 @@ describe('Resume accessibility', () => {
         href,
       );
     }
+    expect(container.querySelector('a[href^="tel:"]')).toBeNull();
   });
 
   it('identifies the X profile by its handle', () => {
     render(<ResumeTemplate />);
-    expect(
-      screen
-        .getByRole('link', { name: '@CorySiebler on X' })
-        .getAttribute('href'),
-    ).toBe('https://x.com/CorySiebler');
-    expect(screen.getByText('X', { exact: true })).not.toBeNull();
-    expect(
-      screen
-        .getByRole('link', { name: '@CorySiebler on X' })
-        .querySelector('[aria-hidden="true"] svg'),
-    ).not.toBeNull();
+    const link = screen.getByRole('link', {
+      name: 'x.com/corysiebler (@CorySiebler on X)',
+    });
+    expect(link.getAttribute('href')).toBe('https://x.com/CorySiebler');
+    expect(link.textContent).toBe('x.com/corysiebler');
+    expect(link.querySelector('[aria-hidden="true"] svg')).not.toBeNull();
   });
 
   it('provides accurate image alternatives and a coherent experience heading hierarchy', () => {

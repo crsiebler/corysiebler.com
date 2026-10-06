@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { MailIcon, PhoneIcon, PinIcon, WebIcon } from '@/atoms/icons';
+import { MailIcon, PinIcon, WebIcon } from '@/atoms/icons';
 import { Text } from '@/atoms/Text';
-import { email, emailUrl, phoneFormatted, phoneUrl } from '@/constants/contact';
+import { email, emailUrl } from '@/constants/contact';
 
 export function ResumeContactSection() {
   return (
@@ -15,14 +15,6 @@ export function ResumeContactSection() {
         </Text>
       </div>
       <div className="flex flex-col gap-1 lg:pr-56">
-        <Link className="flex gap-2" href={phoneUrl}>
-          <span aria-hidden="true">
-            <PhoneIcon size={24} />
-          </span>
-          <Text className="my-auto" variant="caption">
-            {phoneFormatted}
-          </Text>
-        </Link>
         <Link className="flex gap-2" href={emailUrl}>
           <span aria-hidden="true">
             <MailIcon size={24} />

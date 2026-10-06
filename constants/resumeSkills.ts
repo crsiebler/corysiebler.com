@@ -11,7 +11,7 @@ export const resumeSkills = [
       'HTML5',
       'CSS3',
       'Sass',
-      'Tailwind',
+      'Tailwind CSS',
       'Material-UI',
       'Webpack',
     ],
@@ -37,12 +37,28 @@ export const resumeSkills = [
     group: 'Data Stores',
     technologies: [
       'Oracle',
+      'Oracle Exadata',
       'Snowflake',
       'MySQL',
       'PostgreSQL',
       'MongoDB',
       'Redis',
+      'AWS Neptune',
     ],
+  },
+  {
+    group: 'Data Engineering',
+    technologies: [
+      'SQL',
+      'PL/SQL',
+      'openCypher',
+      'openpyxl',
+      'Data integration',
+    ],
+  },
+  {
+    group: 'Content & Localization',
+    technologies: ['Contentful', 'Crowdin', 'i18n'],
   },
   {
     group: 'Cloud Infra',

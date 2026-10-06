@@ -38,6 +38,7 @@ const technologyIcons = {
   Ollama: 'OllamaIcon',
   OpenCode: 'OpenCodeIcon',
   Oracle: 'OracleIcon',
+  'Oracle Database': 'OracleIcon',
   'Oracle Exadata': 'OracleIcon',
   PHP: 'PhpIcon',
   Pinecone: 'PineconeIcon',
@@ -67,26 +68,44 @@ const technologyIcons = {
 export function TechnologyBadges({
   technologies,
   label,
+  variant = 'default',
 }: {
   technologies: readonly string[];
   label: string;
+  variant?: 'default' | 'compact';
 }) {
+  const compact = variant === 'compact';
   return (
-    <ul aria-label={label} className="flex list-none flex-wrap gap-2 p-0">
+    <ul
+      aria-label={label}
+      className={
+        compact ? 'technology-list' : 'flex list-none flex-wrap gap-2 p-0'
+      }
+    >
       {technologies.map((technology) => {
         const iconName =
           technologyIcons[technology as keyof typeof technologyIcons];
         const Icon = iconName ? skillIcons[iconName] : undefined;
         return (
           <li key={technology} className="max-w-full">
-            <span className="text-foreground border-line inline-flex min-h-7 max-w-full items-center gap-1.5 rounded border bg-[var(--workspace-tint)] px-2 py-1 font-mono text-xs leading-5">
+            <span
+              className={
+                compact
+                  ? 'inline-flex min-h-3.5 max-w-full items-center gap-1.5'
+                  : 'text-foreground border-line inline-flex min-h-7 max-w-full items-center gap-1.5 rounded border bg-(--workspace-tint) px-2 py-1 font-mono text-xs leading-5'
+              }
+            >
               {Icon && (
                 <span
                   aria-hidden="true"
-                  className="flex h-4 w-4 shrink-0 items-center justify-center"
+                  className={
+                    compact
+                      ? 'flex h-3.5 w-3.5 shrink-0 items-center justify-center'
+                      : 'flex h-4 w-4 shrink-0 items-center justify-center'
+                  }
                 >
                   <Icon
-                    size={16}
+                    size={compact ? 14 : 16}
                     fill={
                       iconName === 'NextJsIcon' ? 'currentColor' : undefined
                     }

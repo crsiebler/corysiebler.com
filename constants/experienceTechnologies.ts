@@ -27,6 +27,7 @@ export const experienceTechnologies = {
     'Star Schema',
     '3NF',
     'Git',
+    'Data integration',
   ],
   angelStudios: [
     'React',
@@ -42,6 +43,7 @@ export const experienceTechnologies = {
     'Cloudinary',
     'Contentful',
     'Crowdin',
+    'GraphQL',
   ],
   oneOrigin: [
     'Python',

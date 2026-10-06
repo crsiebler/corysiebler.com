@@ -11,7 +11,6 @@ export function ResumeTemplate() {
   return (
     <main className="resume-page min-h-screen" id="main-content" tabIndex={-1}>
       <ResumeHeroSection />
-      <hr className="border-line my-4 border-t" />
 
       <div className="lg:border-line lg:container lg:mx-auto lg:max-w-7xl lg:border lg:p-4">
         <ResumeContactSection />

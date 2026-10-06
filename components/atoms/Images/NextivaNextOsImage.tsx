@@ -1,6 +1,7 @@
 'use client';
 
 import { CldImage } from 'next-cloudinary';
+import { portfolioArchiveImageSizes } from '@/constants/imageSizes';
 
 interface NextivaNextOsImageProps {
   src?: string;
@@ -23,6 +24,7 @@ export function NextivaNextOsImage({
       alt={alt}
       aspectRatio={width / height}
       fill
+      sizes={portfolioArchiveImageSizes}
       format="webp"
       className={className}
     />

@@ -3,6 +3,8 @@ import { GitHubIcon, LinkedInIcon, XIcon } from '@/atoms/icons';
 import { Text } from '@/atoms/Text';
 import { githubUrl, linkedInUrl, xHandle, xUrl } from '@/constants/contact';
 
+const xLabel = 'x.com/corysiebler';
+
 function LinkItem({
   href,
   icon: Icon,
@@ -50,8 +52,8 @@ export function ResumeFooterSection() {
       <LinkItem
         href={xUrl}
         icon={XIcon}
-        label="X"
-        accessibleLabel={`${xHandle} on X`}
+        label={xLabel}
+        accessibleLabel={`${xLabel} (${xHandle} on X)`}
       />
     </footer>
   );

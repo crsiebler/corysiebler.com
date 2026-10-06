@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+@source not '../.work';
+@source not '../.playwright-cli';
+
 @theme inline {
   --color-background: var(--workspace-background);
   --color-surface: var(--workspace-surface);

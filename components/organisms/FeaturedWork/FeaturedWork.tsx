@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ProjectImage } from '@/atoms/ProjectImage/ProjectImage';
 import { featuredProjects } from '@/constants/projects';
+import { TechnologyBadges } from '@/molecules/TechnologyBadges/TechnologyBadges';
 
 export function FeaturedWork() {
   return (
@@ -29,16 +30,13 @@ export function FeaturedWork() {
             </h3>
             <p className="project-headline">{project.title}</p>
             <p className="muted-copy">{project.summary}</p>
-            <ul
-              className="technology-list"
-              aria-label={`${project.organization} technologies`}
-            >
-              {(project.technologyHighlights ?? project.technologies).map(
-                (technology) => (
-                  <li key={technology}>{technology}</li>
-                ),
-              )}
-            </ul>
+            <TechnologyBadges
+              technologies={
+                project.technologyHighlights ?? project.technologies
+              }
+              label={`${project.organization} technologies`}
+              variant="compact"
+            />
             <Link href={`/portfolio/${project.slug}`} className="text-link">
               Explore the project <span aria-hidden="true">→</span>
             </Link>
