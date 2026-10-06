@@ -1,4 +1,11 @@
 {
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "never",
+      "source.removeUnusedImports": "explicit"
+    }
+  },
   "cSpell.words": [
     "corysiebler",
     "crsiebler",
@@ -7,6 +14,10 @@
     "nextos",
     "TDRS"
   ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "peacock.color": "#3f50b5",
+  "postman.settings.dotenv-detection-notification-visibility": false,
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#606ec7",
     "activityBar.background": "#606ec7",
@@ -25,7 +36,5 @@
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveBackground": "#3f50b599",
     "titleBar.inactiveForeground": "#e7e7e799"
-  },
-  "peacock.color": "#3f50b5",
-  "postman.settings.dotenv-detection-notification-visibility": false
+  }
 }

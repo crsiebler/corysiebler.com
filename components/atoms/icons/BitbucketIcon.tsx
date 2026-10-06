@@ -20,7 +20,7 @@ export function BitbucketIcon({
           y1="13.818022%"
           x2="46.9265964%"
           y2="78.7761408%"
-          id="linearGradient-1"
+          id="bitbucket-gradient-1"
         >
           <stop stopColor="#0052CC" offset="18%"></stop>
           <stop stopColor="#2684FF" offset="100%"></stop>
@@ -34,7 +34,7 @@ export function BitbucketIcon({
         ></path>
         <path
           d="M244.610824,77.2417255 L167.693776,77.2417255 L154.78548,152.601582 L101.513151,152.601582 L38.6108235,227.264801 C40.6045494,228.988786 43.1464609,229.94745 45.7820986,229.969396 L212.729383,229.969396 C216.789495,230.021652 220.275791,227.093164 220.925126,223.084972 L244.610824,77.2417255 Z"
-          fill="url(#linearGradient-1)"
+          fill="url(#bitbucket-gradient-1)"
         ></path>
       </g>
     </svg>

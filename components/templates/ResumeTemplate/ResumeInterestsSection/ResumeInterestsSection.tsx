@@ -18,8 +18,12 @@ function InterestListItem({
 }) {
   return (
     <li className="flex gap-6">
-      {icon && <span className="text-tint-darkest">{icon}</span>}
-      <Text className="text-tint-darkest">{interest}</Text>
+      {icon && (
+        <span className="text-muted" aria-hidden="true">
+          {icon}
+        </span>
+      )}
+      <Text className="text-muted">{interest}</Text>
     </li>
   );
 }

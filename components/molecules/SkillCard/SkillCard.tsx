@@ -74,7 +74,7 @@ interface SkillCardProps {
   icons: string[];
 }
 
-const Icons = {
+export const skillIcons = {
   ArduinoIcon,
   Auth0Icon,
   AwsIcon,
@@ -148,7 +148,7 @@ export function SkillCard({ skillName, description, icons }: SkillCardProps) {
     <div className="flex flex-col gap-2 rounded-lg border border-gray-200 p-4 shadow-sm">
       <div className="flex gap-2">
         {icons.map((iconName) => {
-          const IconComponent = Icons[iconName as keyof typeof Icons];
+          const IconComponent = skillIcons[iconName as keyof typeof skillIcons];
           if (!IconComponent) {
             console.error(`Icon "${iconName}" does not exist in Icons.`);
             return null;

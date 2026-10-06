@@ -1,24 +1,14 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
+import { siteUrl } from '@/constants/metadata';
+import { portfolioProjects } from '@/constants/projects';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    {
-      url: 'https://corysiebler.com',
-      lastModified: new Date('2025-04-20'),
-      changeFrequency: 'yearly',
-      priority: 1,
-    },
-    {
-      url: 'https://corysiebler.com/resume',
-      lastModified: new Date('2025-04-20'),
-      changeFrequency: 'yearly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://corysiebler.com/portfolio',
-      lastModified: new Date('2025-04-20'),
-      changeFrequency: 'yearly',
-      priority: 0.7,
-    },
-  ];
+    '/',
+    '/resume',
+    '/portfolio',
+    ...portfolioProjects.map(({ slug }) => `/portfolio/${slug}`),
+  ].map((path) => ({
+    url: new URL(path, siteUrl).toString(),
+  }));
 }

@@ -1,9 +1,12 @@
-import { Roboto } from 'next/font/google';
+import { Geist, Geist_Mono } from 'next/font/google';
 
-export const roboto = Roboto({
-  fallback: ['-apple-system', 'BlinkMacSystemFont', 'Arial', 'sans-serif'],
+export const geist = Geist({
   subsets: ['latin'],
-  weight: ['100', '300', '400', '500', '700'],
   display: 'swap',
-  variable: '--font-roboto',
+  variable: '--font-geist',
+});
+export const geistMono = Geist_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-geist-mono',
 });

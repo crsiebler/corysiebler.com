@@ -12,7 +12,7 @@ interface ArizonaStateUniversityImageProps {
 
 export function ArizonaStateUniversityImage({
   src = 'cory-siebler/arizona-state-university-ira-a-fulton-schools-of-engineering-logo',
-  alt = 'Avatar',
+  alt = 'Arizona State University engineering logo',
   width = 549,
   height = 181,
   className = 'rounded-full',

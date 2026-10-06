@@ -12,6 +12,8 @@
 
 # testing
 /coverage
+/.work/
+/.playwright-cli/
 
 # next.js
 /.next/

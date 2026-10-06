@@ -1,4 +1,5 @@
 import { GeneralDynamicsImage } from '@/atoms/Images/GeneralDynamicsImage';
+import { experienceTechnologies } from '@/constants/experienceTechnologies';
 import { ExperienceArticle } from '@/organisms/ExperienceArticle';
 
 export function GeneralDynamicsArticle() {
@@ -18,7 +19,7 @@ export function GeneralDynamicsArticle() {
         'Maintained and configured COTS applications, such as ODI, GoldenGate, and OBIEE, for use on projects.',
         'Communicated with NASA engineers at White Sands and Goddard to verify data and provide pre-deployment training.',
       ]}
-      technologies="Java, J2EE, JPA, Jenkins, Python, NumPy, OpenPyxl, SQL, PL/SQL, Bash, Embedded Systems, Linux, RedHat Linux, VMware vSphere, Oracle Database, Oracle WebLogic, Oracle Exadata, Oracle Business Intelligence, Oracle Data Integrator, Oracle GoldenGate, MS SQL, MySQL, ODI, GoldenGate, OBIEE, Eclipse, Star Schema, 3NF, Git"
+      technologies={experienceTechnologies.generalDynamics.join(', ')}
     />
   );
 }

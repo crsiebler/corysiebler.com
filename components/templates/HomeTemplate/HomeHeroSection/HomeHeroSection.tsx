@@ -1,108 +1,94 @@
 import Link from 'next/link';
-import { InfoIcon } from '@/atoms/icons';
-import { HeadshotImage } from '@/atoms/Images/HeadshotImage';
-import { LinkButton } from '@/atoms/LinkButton';
-import { Text } from '@/atoms/Text';
+import { GitHubIcon } from '@/atoms/icons/GitHubIcon';
+import { LinkedInIcon } from '@/atoms/icons/LinkedInIcon';
+import { XIcon } from '@/atoms/icons/XIcon';
+import {
+  emailUrl,
+  githubUrl,
+  linkedInUrl,
+  xHandle,
+  xUrl,
+} from '@/constants/contact';
+import { SectionNavigation } from '@/molecules/SectionNavigation/SectionNavigation';
 
 export function HomeHeroSection() {
   return (
-    <section className="mx-auto flex flex-col gap-4 px-4 md:flex-row" id="hero">
-      <div className="flex grow flex-col gap-4">
-        <Text className="text-primary" variant="h1" weight="light">
-          Cory Siebler
-        </Text>
-        <Text
-          className="text-tint-darkest"
-          component="h2"
-          variant="h4"
-          weight="light"
+    <div className="home-introduction" id="hero">
+      <p className="eyebrow">
+        <span aria-hidden="true">$ </span>whoami
+      </p>
+      <h1>
+        Cory
+        <br />
+        Siebler<span className="name-period">.</span>
+      </h1>
+      <p className="hero-role">Principal Software Engineer</p>
+      <p className="hero-statement">
+        Thoughtful systems.
+        <br />
+        Reliable software.
+        <br />
+        <span>Built for what comes next.</span>
+      </p>
+      <p className="hero-description">
+        I connect architecture with execution — from mission-critical
+        infrastructure to products people use every day.
+      </p>
+      <div className="hero-actions">
+        <Link className="workspace-button" href="/portfolio">
+          Explore my work <span aria-hidden="true">↗</span>
+        </Link>
+        <Link className="text-link" href="/resume">
+          View resume <span aria-hidden="true">→</span>
+        </Link>
+      </div>
+      <SectionNavigation />
+      <div className="hero-socials">
+        <a
+          href={githubUrl}
+          aria-label="GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Principal Software Engineer
-        </Text>
-        <Text className="text-shade" component="p" variant="body1">
-          I am a Principal Software Engineer with 14+ years of experience
-          building scalable web applications, cloud-native systems, and
-          developer platforms. My work spans full-stack development,
-          architecture, site reliability, and AI-enabled engineering using
-          technologies such as Python, React, Next.js, TypeScript, and AWS. Want
-          to see more of my work? Check out my{' '}
-          <Link
-            className="text-blue hover:underline"
-            href="https://github.com/crsiebler"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </Link>{' '}
-          account.
-        </Text>
-        <Text className="text-shade" component="p" variant="body1">
-          Want to hire me? Reach out to{' '}
-          <Link
-            className="text-blue hover:underline"
-            href="https://phitechsolutions.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Phi Technology Solutions
-          </Link>{' '}
-          and I will build and innovate with you!
-        </Text>
-        <div className="flex gap-2">
-          <LinkButton
-            className="h-full px-4 py-2"
-            color="primary"
-            href="/resume"
-            rounded="sm"
-            variant="contained"
-          >
-            <span className="flex flex-row gap-2">
-              <Text
-                component="span"
-                className="my-auto hidden uppercase md:block"
-                variant="body2"
-              >
-                View Resume
-              </Text>
-              <Text
-                component="span"
-                className="my-auto uppercase md:hidden"
-                variant="body2"
-              >
-                Resume
-              </Text>
-              <InfoIcon size={20} />
-            </span>
-          </LinkButton>
-          <LinkButton
-            className="h-full px-4 py-2"
-            color="primary"
-            href="/portfolio"
-            rounded="sm"
-            variant="outlined"
-          >
-            <span className="flex flex-row">
-              <Text
-                component="span"
-                className="hidden uppercase md:block"
-                variant="body2"
-              >
-                See Portfolio
-              </Text>
-              <Text
-                component="span"
-                className="uppercase md:hidden"
-                variant="body2"
-              >
-                Portfolio
-              </Text>
-            </span>
-          </LinkButton>
-        </div>
+          <span aria-hidden="true">
+            <GitHubIcon size={22} />
+          </span>
+        </a>
+        <a
+          href={linkedInUrl}
+          aria-label="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span aria-hidden="true">
+            <LinkedInIcon size={22} />
+          </span>
+        </a>
+        <a
+          href={xUrl}
+          aria-label={`${xHandle} on X`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span aria-hidden="true">
+            <XIcon size={22} />
+          </span>
+        </a>
+        <a href={emailUrl} className="mono-link">
+          Let’s talk <span aria-hidden="true">↗</span>
+        </a>
       </div>
-      <div className="flex w-full items-center justify-center md:w-fit">
-        <HeadshotImage />
-      </div>
-    </section>
+      <p className="hero-hiring">
+        Want to hire me? Reach out to{' '}
+        <a
+          href="https://phitechsolutions.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Phi Technology Solutions
+        </a>
+        .
+      </p>
+    </div>
   );
 }

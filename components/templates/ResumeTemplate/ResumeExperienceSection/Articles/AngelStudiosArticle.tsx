@@ -1,4 +1,5 @@
 import { AngelStudiosImage } from '@/atoms/Images/AngelStudiosImage';
+import { experienceTechnologies } from '@/constants/experienceTechnologies';
 import { ExperienceArticle } from '@/organisms/ExperienceArticle';
 
 export function AngelStudiosArticle() {
@@ -16,12 +17,12 @@ export function AngelStudiosArticle() {
         'Integrated Optimizely for A/B testing, leading to 10-20% increased revenue and viewership through experimentation.',
         'Tracked user events using Segment for analytics and determining the success of campaigns.',
         'Improved Lighthouse score.',
-        'Implemented i18n localization for a total of 32 different regions.',
+        'Designed i18n routing and a Contentful–Crowdin translation strategy for expansion into 13 international markets, emphasizing Portuguese, French, and Spanish.',
         'Conformed to GDPR regulations.',
         'Initialized push notifications through Braze.',
-        'Created a website Blog feature from Contentful CMS data that achieved thousands of daily hits organically. Created section from Contentful CMS.',
+        'Architected and implemented the website SEO foundation and entire Contentful-powered blog, attracting organic traffic on the order of tens of thousands of visitors per day.',
       ]}
-      technologies="React.js, Next.js, Tailwind CSS, i18n, Vercel, Braze, Optimizely, Segment, Snowflake, Bitmovin, Cloudinary, Contentful"
+      technologies={experienceTechnologies.angelStudios.join(', ')}
     />
   );
 }

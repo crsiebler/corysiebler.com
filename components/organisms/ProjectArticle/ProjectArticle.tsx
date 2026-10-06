@@ -1,10 +1,11 @@
-import { LinkButton } from '@/atoms/LinkButton';
+import Link from 'next/link';
 import { Text } from '@/atoms/Text';
 
 interface ProjectArticleProps {
   description: string;
   image: React.ReactNode;
   link: string;
+  linkLabel?: string;
   title: string;
 }
 
@@ -12,10 +13,12 @@ export function ProjectArticle({
   description,
   image,
   link,
+  linkLabel = 'Visit project',
   title,
 }: ProjectArticleProps) {
+  const external = link.startsWith('https://') || link.startsWith('http://');
   return (
-    <article className="border-tint-light flex flex-col overflow-hidden rounded-lg border shadow-md">
+    <article className="legacy-project flex flex-col overflow-hidden rounded-lg border">
       <div>
         <div className="relative h-64 w-full">{image}</div>
       </div>
@@ -31,18 +34,16 @@ export function ProjectArticle({
         <Text className="mb-4 grow" variant="body2">
           {description}
         </Text>
-        <LinkButton
-          color="primary"
-          className="p-0"
+        <Link
+          className="text-link"
           href={link}
-          rel="noopener noreferrer"
-          target="_blank"
-          variant="text"
+          rel={external ? 'noopener noreferrer' : undefined}
+          target={external ? '_blank' : undefined}
         >
-          <Text variant="body2" uppercase weight="semibold">
-            More Information
+          <Text component="span" variant="body2" weight="medium">
+            {linkLabel} <span aria-hidden="true">{external ? '↗' : '→'}</span>
           </Text>
-        </LinkButton>
+        </Link>
       </div>
     </article>
   );

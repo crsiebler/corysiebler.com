@@ -7,8 +7,8 @@ export function ResumeDescriptionSection() {
       className="flex flex-col items-center gap-2 p-4 lg:flex-row"
       id="description"
     >
-      <div className="border-primary rounded-full border-2 lg:mx-32">
-        <AvatarImage />
+      <div className="border-line rounded-full border-2 lg:mx-32">
+        <AvatarImage alt="Cory Siebler" />
       </div>
       <Text variant="body2">
         Principal Software Engineer and Technical Leader with 14+ years of

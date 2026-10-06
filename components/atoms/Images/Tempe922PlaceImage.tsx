@@ -1,6 +1,7 @@
 'use client';
 
 import { CldImage } from 'next-cloudinary';
+import { portfolioArchiveImageSizes } from '@/constants/imageSizes';
 
 interface Tempe922PlaceImageProps {
   src?: string;
@@ -12,7 +13,7 @@ interface Tempe922PlaceImageProps {
 
 export function Tempe922PlaceImage({
   src = 'cory-siebler/922-place',
-  alt = 'American Express Logo',
+  alt = '922 Place student housing community',
   width = 940,
   height = 517,
   className = 'object-cover',
@@ -23,6 +24,7 @@ export function Tempe922PlaceImage({
       alt={alt}
       aspectRatio={width / height}
       fill
+      sizes={portfolioArchiveImageSizes}
       format="webp"
       className={className}
     />

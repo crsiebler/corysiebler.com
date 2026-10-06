@@ -1,12 +1,13 @@
 import clsx from 'clsx';
-import { roboto } from '@/app/ui/fonts';
+import { geist, geistMono } from '@/app/ui/fonts';
 import { JsonLd } from '@/atoms/JsonLd';
 import { ShortcutIcon } from '@/atoms/ShortcutIcon';
 import { getMetadata, getViewport, schema } from '@/constants/metadata';
+import { themeBootstrap } from '@/lib/theme';
 import { JumpToTop } from '@/molecules/JumpToTop';
-import { ApplicationBar } from '@/organisms/ApplicationBar';
 import { Footer } from '@/organisms/Footer';
-
+import { WorkspaceAtmosphere } from '@/organisms/WorkspaceAtmosphere/WorkspaceAtmosphere';
+import { WorkspaceHeader } from '@/organisms/WorkspaceHeader/WorkspaceHeader';
 import './globals.css';
 
 export const metadata = getMetadata({});
@@ -14,19 +15,25 @@ export const viewport = getViewport();
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
+        <script
+          id="theme-preference"
+          dangerouslySetInnerHTML={{ __html: themeBootstrap }}
+        />
         <JsonLd schema={schema} />
         <ShortcutIcon />
       </head>
-      <body className={clsx('overscroll-none', roboto.className)}>
+      <body className={clsx(geist.variable, geistMono.variable)}>
+        <a className="skip-link" href="#main-content">
+          Skip to content
+        </a>
         <div id="anchor" />
-        <ApplicationBar title={metadata.title} />
-        <div className="flex min-h-screen flex-col justify-between lg:ml-70">
+        <WorkspaceAtmosphere />
+        <WorkspaceHeader />
+        <div className="site-shell">
           {children}
           <Footer />
         </div>

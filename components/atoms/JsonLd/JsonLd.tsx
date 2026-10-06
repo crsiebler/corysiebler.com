@@ -13,13 +13,14 @@ export interface Project {
 export interface Person {
   '@context': 'https://schema.org';
   '@type': 'Person';
-  affiliation: Project;
+  affiliation?: Project;
   description: string;
   image: string;
   jobTitle: string;
   name: string;
   sameAs: string[];
-  skills: string[];
+  skills?: string[];
+  knowsAbout?: string[];
   url: string;
   worksFor: Organization[];
 }
@@ -32,7 +33,9 @@ export function JsonLd({ schema }: JsonLdProps) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(schema).replace(/</g, '\\u003c'),
+      }}
     />
   );
 }

@@ -1,5 +1,5 @@
-import { render, fireEvent, waitFor } from '@testing-library/react';
-import { beforeEach, describe, expect, it, vi } from 'vitest';
+import { cleanup, render, fireEvent, waitFor } from '@testing-library/react';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { JumpToTop } from './JumpToTop';
 
 // Mock scrollIntoView
@@ -9,6 +9,9 @@ function wrapper() {
   return render(
     <div>
       <div id="anchor" />
+      <main id="main-content" tabIndex={-1}>
+        <h1>Portfolio</h1>
+      </main>
       <JumpToTop />
     </div>,
   );
@@ -30,8 +33,20 @@ beforeEach(() => {
   // Clear all mocks before each test
   vi.clearAllMocks();
 });
+afterEach(cleanup);
 
 describe('JumpToTop', () => {
+  it('moves keyboard focus to main content before the control disappears', () => {
+    const { getByRole } = wrapper();
+    document.documentElement.scrollTop = 301;
+    fireEvent.scroll(window);
+    const button = getByRole('button', { name: 'Back to top' });
+    button.focus();
+    fireEvent.click(button);
+    document.documentElement.scrollTop = 0;
+    fireEvent.scroll(window);
+    expect(document.activeElement).toBe(getByRole('main'));
+  });
   it('should not be visible initially', () => {
     const { queryByTestId } = wrapper();
     expect(queryByTestId('jump-to-top')).toBeNull();
