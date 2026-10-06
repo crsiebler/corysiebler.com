@@ -1,0 +1,13 @@
+[mcp_servers.chrome]
+command = "bunx"
+args = ["chrome-devtools-mcp@latest"]
+enabled = true
+
+[mcp_servers.jam]
+url = "https://mcp.jam.dev/mcp"
+enabled = true
+
+[mcp_servers.playwright]
+command = "bunx"
+args = ["@playwright/mcp@latest"]
+enabled = true
